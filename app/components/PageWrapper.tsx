@@ -3,7 +3,13 @@ import React from "react";
 
 const PageWrapper = ({ children }: { children: React.ReactNode }) => {
   return (
-    <Box sx={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+    <Box
+      sx={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
       <Container
         maxWidth={false}
         sx={{
@@ -13,6 +19,7 @@ const PageWrapper = ({ children }: { children: React.ReactNode }) => {
           alignItems: "center",
           backgroundColor: "#d8dec1",
         }}
+        disableGutters
       >
         {children}
       </Container>
