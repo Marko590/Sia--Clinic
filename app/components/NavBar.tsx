@@ -12,12 +12,7 @@ import {
   MenuItem,
 } from "@mui/material";
 import { Menu as MenuIcon, Adb as AdbIcon, Call } from "@mui/icons-material";
-
-const pages: Link[] = [
-  { title: "Services", link: "/services" },
-  { title: "Pricing", link: "/pricing" },
-  { title: "Contact", link: "/contact" },
-];
+import { NavLinks } from "../lib/data";
 
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -33,7 +28,7 @@ const NavBar = () => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-
+  const pages = NavLinks;
   return (
     <AppBar position="fixed" sx={{ backgroundColor: "#f4fade" }}>
       <Container maxWidth="xl">
@@ -120,7 +115,7 @@ const NavBar = () => {
                 <Typography
                   component="a"
                   key={page.title}
-                  href={page.link}
+                  href={page.path}
                   onClick={handleCloseNavMenu}
                   sx={{
                     my: 2,

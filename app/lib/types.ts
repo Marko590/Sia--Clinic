@@ -5,7 +5,7 @@ export interface Service {
   pictureUrl: string;
 }
 
-export interface NavLinks {
+export interface NavLink {
   title: string;
   path: string;
 }
