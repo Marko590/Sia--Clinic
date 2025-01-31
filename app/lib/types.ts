@@ -13,4 +13,5 @@ export interface NavLinks {
 export interface PriceItem {
   service: string;
   price: number;
+  category: string;
 }

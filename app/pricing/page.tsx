@@ -1,4 +1,4 @@
-import { ArrowCircleDown } from "@mui/icons-material";
+import { ArrowDownward } from "@mui/icons-material";
 import {
   Accordion,
   AccordionDetails,
@@ -9,27 +9,28 @@ import {
   TableCell,
   TableContainer,
   TableRow,
-  Typography,
 } from "@mui/material";
 import React from "react";
+import DropDownHeader from "../components/DropDownHeader";
+import { PriceItem } from "../lib/types";
 
 const Page = () => {
-  const priceList = [
+  const priceList: Array<PriceItem> = [
     {
       service: "Clear aligners (Invisalign or similar)",
       price: 150000,
       category: "Orthodontics",
-    }, // Can be much higher
+    },
     {
       service: "Orthodontic braces (fixed, per jaw)",
       price: 80000,
       category: "Orthodontics",
-    }, // Range is wide
+    },
     {
       service: "Orthodontic braces (removable)",
       price: 40000,
       category: "Orthodontics",
-    }, // Range is wide
+    },
     {
       service: "Orthodontic retainers",
       price: 10000,
@@ -39,17 +40,17 @@ const Page = () => {
       service: "Porcelain veneer (per tooth)",
       price: 20000,
       category: "Cosmetic Dentistry",
-    }, // High quality veneers can be more
+    },
     {
       service: "Laser teeth whitening",
       price: 15000,
       category: "Cosmetic Dentistry",
-    }, // Varies greatly
+    },
     {
       service: "Teeth whitening",
       price: 10000,
       category: "Cosmetic Dentistry",
-    }, // Varies greatly
+    },
     {
       service: "Dental bonding (per tooth)",
       price: 7000,
@@ -65,12 +66,12 @@ const Page = () => {
       price: 4000,
       category: "General Dentistry",
     },
-    { service: "Tooth extraction", price: 5000, category: "General Dentistry" }, // Simple extraction
+    { service: "Tooth extraction", price: 5000, category: "General Dentistry" },
     {
       service: "Wisdom tooth extraction",
       price: 10000,
       category: "General Dentistry",
-    }, // Can be much more complex
+    },
     {
       service: "Sedation (nitrous oxide)",
       price: 5000,
@@ -81,12 +82,12 @@ const Page = () => {
       service: "TMJ treatment (temporomandibular joint)",
       price: 12000,
       category: "General Dentistry",
-    }, // Varies greatly
+    },
     {
       service: "Sleep apnea appliance",
       price: 25000,
       category: "General Dentistry",
-    }, // Varies greatly
+    },
     {
       service: "Post-operative care",
       price: 2000,
@@ -108,7 +109,7 @@ const Page = () => {
       service: "Gum disease treatment (scaling and root planing)",
       price: 10000,
       category: "Periodontics",
-    }, // Per quadrant, usually
+    },
     {
       service: "Fluoride treatment",
       price: 3000,
@@ -143,37 +144,37 @@ const Page = () => {
       service: "Filling (composite)",
       price: 6000,
       category: "Restorative Dentistry",
-    }, // Per tooth
+    },
     {
       service: "Root canal treatment (endodontics)",
       price: 9000,
       category: "Restorative Dentistry",
-    }, // Per tooth
+    },
     {
       service: "Ceramic crown",
       price: 30000,
       category: "Restorative Dentistry",
-    }, // Per crown
+    },
     {
       service: "Metal-ceramic crown",
       price: 20000,
       category: "Restorative Dentistry",
-    }, // Per crown
+    },
     {
       service: "Complete denture",
       price: 70000,
       category: "Restorative Dentistry",
-    }, // Per arch
+    },
     {
       service: "Partial denture",
       price: 50000,
       category: "Restorative Dentistry",
-    }, // Per arch
+    },
     {
       service: "Dental implant",
       price: 80000,
       category: "Restorative Dentistry",
-    }, // Per implant (including crown, abutment, etc. is extra)
+    },
     {
       service: "Inlays/Onlays (per tooth)",
       price: 15000,
@@ -190,82 +191,58 @@ const Page = () => {
       category: "Restorative Dentistry",
     },
   ];
+  const servicesByCategory: Record<string, PriceItem[]> = {};
+
+  priceList.forEach((service) => {
+    if (!servicesByCategory[service.category]) {
+      servicesByCategory[service.category] = [];
+    }
+    servicesByCategory[service.category].push(service);
+  });
   return (
-    <Box sx={{ width: "80%", p: 8 }}>
-      <Accordion
-        sx={{
-          width: "100%",
-        }}
-      >
-        <AccordionSummary>
-          <TableContainer>
-            <Table>
-              <TableBody>
-                <TableRow>
-                  <TableCell
-                    sx={{ width: "5%", borderBottom: "1px grey solid" }}
-                  >
-                    <ArrowCircleDown />
-                  </TableCell>
-                  <TableCell
-                    sx={{ width: "75%", p: 2, borderBottom: "1px grey solid" }}
-                  >
-                    <Typography>Service</Typography>
-                  </TableCell>
-                  <TableCell
-                    align="right"
-                    sx={{
-                      width: "20%", // Ensures equal width for Price (RSD) column
-                      borderLeft: "solid grey 1px",
-                      padding: "10px", // Consistent padding
-                      textAlign: "center",
-                      borderBottom: "1px grey solid",
-                    }}
-                  >
-                    Price (RSD)
-                  </TableCell>
-                </TableRow>
-              </TableBody>
-            </Table>
-          </TableContainer>
-        </AccordionSummary>
-        <AccordionDetails sx={{ pt: 0 }}>
-          <TableContainer>
-            <Table>
-              <TableBody>
-                {priceList.map((item, index) => (
-                  <TableRow key={index}>
-                    <TableCell
-                      sx={{ width: "5%", borderBottom: "0px" }}
-                    ></TableCell>
-                    <TableCell
-                      sx={{
-                        width: "75%",
-                        p: 2,
-                        borderBottom: "1px grey solid",
-                      }}
-                    >
-                      {item.service}
-                    </TableCell>
-                    <TableCell
-                      align="right"
-                      sx={{
-                        width: "20%",
-                        borderLeft: "solid grey 1px",
-                        padding: "10px",
-                        textAlign: "center",
-                        borderBottom: "1px grey solid",
-                      }}
-                    >
-                      {item.price} RSD
-                    </TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </TableContainer>
-        </AccordionDetails>
-      </Accordion>
+    <Box sx={{ width: { xs: "100%", md: "80%" }, p: { xs: 2 } }}>
+      {Object.keys(servicesByCategory).map((category) => (
+        <Accordion
+          sx={{
+            width: "100%",
+            backgroundColor: "#f4fade",
+          }}
+        >
+          <AccordionSummary expandIcon={<ArrowDownward />}>
+            <DropDownHeader category={category} />
+          </AccordionSummary>
+          <AccordionDetails sx={{ pt: 0, px: { xs: 2, md: 4 } }}>
+            <TableContainer>
+              <Table>
+                <TableBody>
+                  {servicesByCategory[category].map((item, index) => (
+                    <TableRow key={index} sx={{ pr: 2 }}>
+                      <TableCell
+                        sx={{
+                          borderBottom: "1px grey solid",
+                        }}
+                      >
+                        {item.service}
+                      </TableCell>
+                      <TableCell
+                        align="right"
+                        sx={{
+                          width: "150px",
+                          borderLeft: "solid grey 1px",
+                          borderBottom: "solid grey 1px",
+                          textAlign: "center",
+                        }}
+                      >
+                        {item.price} RSD
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </TableContainer>
+          </AccordionDetails>
+        </Accordion>
+      ))}
     </Box>
   );
 };
