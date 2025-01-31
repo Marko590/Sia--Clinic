@@ -9,3 +9,8 @@ export interface NavLinks {
   title: string;
   path: string;
 }
+
+export interface PriceItem {
+  service: string;
+  price: number;
+}
