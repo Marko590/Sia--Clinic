@@ -32,16 +32,15 @@ const NavBar = () => {
   return (
     <AppBar position="fixed" sx={{ backgroundColor: "#f4fade" }}>
       <Container maxWidth="xl">
-        <Toolbar disableGutters sx={{ py: 1, alignItems: "center" }}>
+        <Toolbar disableGutters sx={{ py: 2, alignItems: "center" }}>
           {/* Logo for larger screens */}
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          <AdbIcon sx={{ display: { xs: "none", md: "flex" } }} />
           <Typography
             variant="h5"
             noWrap
             component="a"
-            href="#"
+            href="/"
             sx={{
-              mr: 2,
               display: { xs: "none", md: "flex" },
               fontFamily: "monospace",
               fontWeight: 700,

@@ -24,7 +24,7 @@ const Page = () => {
     servicesByCategory[service.category].push(service);
   });
   return (
-    <Box sx={{ width: { xs: "100%", md: "80%" }, p: { xs: 2 } }}>
+    <Box sx={{ width: { xs: "100%", md: "80%" }, px: { xs: 2 }, pt: 10 }}>
       {Object.keys(servicesByCategory).map((category) => (
         <Accordion
           sx={{
