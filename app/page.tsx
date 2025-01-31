@@ -71,7 +71,6 @@ export default function Home() {
             >
               Top-rated clinicians and no judgement, ever.
             </Typography>
-
             <Box
               sx={{
                 display: "flex",
@@ -82,7 +81,6 @@ export default function Home() {
             >
               <Button
                 variant="contained"
-                onClick={() => (window.location.href = "tel:+381640766222")}
                 sx={{
                   bgcolor: "#BC8452",
                   width: "50%",
@@ -90,12 +88,14 @@ export default function Home() {
                   fontWeight: 700,
                   letterSpacing: "0.12em",
                 }}
-                startIcon={<Call />}
+                startIcon={<LocationOn />}
+                onClick={handleScroll}
               >
-                CALL NOW
+                LOCATION
               </Button>
               <Button
                 variant="outlined"
+                onClick={() => (window.location.href = "tel:+381640766222")}
                 sx={{
                   width: "50%",
                   p: 2,
@@ -105,10 +105,9 @@ export default function Home() {
                   letterSpacing: "0.12em",
                   display: { xs: "flex", md: "none" },
                 }}
-                startIcon={<LocationOn />}
-                onClick={handleScroll}
+                startIcon={<Call />}
               >
-                LOCATION
+                CALL NOW
               </Button>
             </Box>
           </Box>

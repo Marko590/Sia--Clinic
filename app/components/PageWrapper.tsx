@@ -8,6 +8,7 @@ const PageWrapper = ({ children }: { children: React.ReactNode }) => {
         minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
+        mt: { xs: 8, md: 0 },
       }}
     >
       <Container

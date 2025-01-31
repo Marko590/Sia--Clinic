@@ -4,3 +4,8 @@ export interface Service {
   link: string;
   pictureUrl: string;
 }
+
+export interface NavLinks {
+  title: string;
+  path: string;
+}

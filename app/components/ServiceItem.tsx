@@ -4,7 +4,7 @@ import Service from "../lib/types";
 const ServiceItem = ({ service }: { service: Service }) => {
   return (
     <Paper
-      elevation={3}
+      elevation={8}
       sx={{ p: 4, backgroundColor: "#f4fade", height: "100%" }}
       square
     >

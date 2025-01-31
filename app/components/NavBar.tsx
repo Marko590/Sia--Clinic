@@ -11,9 +11,13 @@ import {
   Button,
   MenuItem,
 } from "@mui/material";
-import { Menu as MenuIcon, Adb as AdbIcon } from "@mui/icons-material";
+import { Menu as MenuIcon, Adb as AdbIcon, Call } from "@mui/icons-material";
 
-const pages = ["Services", "Pricing", "Contact"];
+const pages: Link[] = [
+  { title: "Services", link: "/services" },
+  { title: "Pricing", link: "/pricing" },
+  { title: "Contact", link: "/contact" },
+];
 
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -31,7 +35,7 @@ const NavBar = () => {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: "#f4fade" }}>
+    <AppBar position="fixed" sx={{ backgroundColor: "#f4fade" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={{ py: 1, alignItems: "center" }}>
           {/* Logo for larger screens */}
@@ -71,8 +75,8 @@ const NavBar = () => {
               sx={{ display: { xs: "block", md: "none" } }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page.title} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">{page.title}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -115,8 +119,8 @@ const NavBar = () => {
               {pages.map((page) => (
                 <Typography
                   component="a"
-                  key={page}
-                  href="#"
+                  key={page.title}
+                  href={page.link}
                   onClick={handleCloseNavMenu}
                   sx={{
                     my: 2,
@@ -125,14 +129,18 @@ const NavBar = () => {
                     "&:hover": { color: "primary.main" },
                   }}
                 >
-                  {page}
+                  {page.title}
                 </Typography>
               ))}
             </Box>
-            <Button variant="contained" color="primary">
-              Book now
-            </Button>
           </Box>
+          <Button
+            startIcon={<Call />}
+            variant="outlined"
+            onClick={() => (window.location.href = "tel:+381640766222")}
+          >
+            +381640766222
+          </Button>
         </Toolbar>
       </Container>
     </AppBar>
