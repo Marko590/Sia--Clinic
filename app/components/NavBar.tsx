@@ -31,85 +31,43 @@ const NavBar = () => {
   const pages = NavLinks;
   return (
     <AppBar position="fixed" sx={{ backgroundColor: "#f4fade" }}>
-      <Container maxWidth="xl">
-        <Toolbar disableGutters sx={{ py: 2, alignItems: "center" }}>
-          {/* Logo for larger screens */}
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" } }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              textDecoration: "none",
-              "&:hover": { color: "primary.main" },
-            }}
-          >
-            SIA
-          </Typography>
-
-          {/* Mobile menu button */}
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-            <IconButton size="large" onClick={handleOpenNavMenu}>
-              <MenuIcon />
-            </IconButton>
-
-            {/* Mobile menu dropdown */}
-            <Menu
-              anchorEl={anchorElNav}
-              anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
-              keepMounted
-              transformOrigin={{ vertical: "top", horizontal: "left" }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{ display: { xs: "block", md: "none" } }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page.title} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page.title}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-
-          {/* Logo for smaller screens */}
-
-          <AdbIcon
-            sx={{
-              display: { xs: "flex", md: "none" },
-              mr: 1,
-            }}
-          />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="#"
-            sx={{
-              mr: 8,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              textDecoration: "none",
-            }}
-          >
-            SIA
-          </Typography>
-          {/* Desktop navigation links */}
+      <Box sx={{ maxWidth: "100%", px: 2 }}>
+        <Toolbar disableGutters sx={{ py: 1, alignItems: "center" }}>
           <Box
             sx={{
-              flexGrow: 1,
-              display: { xs: "none", md: "flex" },
-              justifyContent: "space-between",
+              width: "100%",
+              display: "flex",
+              justifyContent: { xs: "space-between", md: "flex-start" },
+              alignItems: "center",
             }}
           >
-            <Box sx={{ display: "flex" }}>
+            {/* Mobile menu button (fixed click issue) */}
+            <Box sx={{ display: { xs: "flex", md: "none" } }}>
+              <IconButton onClick={handleOpenNavMenu}>
+                <MenuIcon />
+              </IconButton>
+            </Box>
+
+            {/* Logo (fixes flexGrow issue) */}
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: { xs: "center", md: "flex-start" },
+                flexGrow: { xs: 0, md: 0 },
+                width: { xs: "100px", md: "150px" },
+              }}
+            >
+              <img src="/SIA_senka.png" style={{ width: "100%" }} />
+            </Box>
+
+            {/* Desktop navigation links */}
+            <Box
+              sx={{
+                flexGrow: 1,
+                display: { xs: "none", md: "flex" },
+                ml: 2,
+              }}
+            >
               {pages.map((page) => (
                 <Typography
                   component="a"
@@ -127,16 +85,49 @@ const NavBar = () => {
                 </Typography>
               ))}
             </Box>
+
+            {/* Call Button/Icon */}
+            <Box sx={{ display: "flex", alignItems: "center" }}>
+              <IconButton
+                sx={{
+                  display: { xs: "flex", md: "none" },
+                  color: "primary.main",
+                }}
+                onClick={() => (window.location.href = "tel:+381640766222")}
+              >
+                <Call />
+              </IconButton>
+              <Button
+                startIcon={<Call />}
+                variant="outlined"
+                sx={{ display: { xs: "none", md: "flex" } }}
+                onClick={() => (window.location.href = "tel:+381640766222")}
+              >
+                +381640766222
+              </Button>
+            </Box>
           </Box>
-          <Button
-            startIcon={<Call />}
-            variant="outlined"
-            onClick={() => (window.location.href = "tel:+381640766222")}
-          >
-            +381640766222
-          </Button>
         </Toolbar>
-      </Container>
+
+        {/* Mobile menu dropdown (ensure it's inside AppBar) */}
+        <Menu
+          anchorEl={anchorElNav}
+          anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
+          keepMounted
+          transformOrigin={{ vertical: "top", horizontal: "left" }}
+          open={Boolean(anchorElNav)}
+          onClose={handleCloseNavMenu}
+          sx={{
+            display: { xs: "absolute", md: "none", width: "auto", left: 0 },
+          }}
+        >
+          {pages.map((page) => (
+            <MenuItem key={page.title} onClick={handleCloseNavMenu}>
+              <Typography textAlign="center">{page.title}</Typography>
+            </MenuItem>
+          ))}
+        </Menu>
+      </Box>
     </AppBar>
   );
 };

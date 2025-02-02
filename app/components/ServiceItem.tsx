@@ -8,7 +8,14 @@ const ServiceItem = ({ service }: { service: Service }) => {
       sx={{ p: 4, backgroundColor: "#f4fade", height: "100%" }}
       square
     >
-      <Box sx={{ display: "flex", flexDirection: "column", gap: 4 }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          gap: 4,
+          height: "100%", // Ensures full height usage
+        }}
+      >
         <Typography
           variant="h1"
           sx={{
@@ -25,13 +32,22 @@ const ServiceItem = ({ service }: { service: Service }) => {
           sx={{
             fontFamily: "serif",
             fontWeight: 400,
-            fontSize: { xs: "1.25rem", md: "1.5rem", width: "80%" },
+            fontSize: { xs: "1.25rem", md: "1.5rem" },
+            width: "80%",
           }}
         >
           {service.subTitle}
         </Typography>
 
-        <Box sx={{ width: "100%", display: "flex", gap: 2 }}>
+        {/* Buttons always at the bottom */}
+        <Box
+          sx={{
+            width: "100%",
+            display: "flex",
+            gap: 2,
+            mt: "auto", // Pushes the buttons to the bottom
+          }}
+        >
           <Button
             variant="contained"
             sx={{
