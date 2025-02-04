@@ -13,6 +13,7 @@ import {
 } from "@mui/material";
 import { Menu as MenuIcon, Adb as AdbIcon, Call } from "@mui/icons-material";
 import { NavLinks } from "../lib/data";
+import Link from "next/link";
 
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -49,16 +50,18 @@ const NavBar = () => {
             </Box>
 
             {/* Logo (fixes flexGrow issue) */}
-            <Box
-              sx={{
-                display: "flex",
-                justifyContent: { xs: "center", md: "flex-start" },
-                flexGrow: { xs: 0, md: 0 },
-                width: { xs: "100px", md: "150px" },
-              }}
-            >
-              <img src="/SIA_senka.png" style={{ width: "100%" }} />
-            </Box>
+            <Link href="/">
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: { xs: "center", md: "flex-start" },
+                  flexGrow: { xs: 0, md: 0 },
+                  width: { xs: "100px", md: "150px" },
+                }}
+              >
+                <img src="/SIA_senka.png" style={{ width: "100%" }} />
+              </Box>
+            </Link>
 
             {/* Desktop navigation links */}
             <Box
@@ -78,6 +81,7 @@ const NavBar = () => {
                     my: 2,
                     ml: 4,
                     fontWeight: 700,
+                    fontSize: "1.25rem",
                     "&:hover": { color: "primary.main" },
                   }}
                 >
@@ -100,6 +104,7 @@ const NavBar = () => {
               <Button
                 startIcon={<Call />}
                 variant="outlined"
+                size="large"
                 sx={{ display: { xs: "none", md: "flex" } }}
                 onClick={() => (window.location.href = "tel:+381640766222")}
               >

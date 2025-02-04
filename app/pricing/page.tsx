@@ -32,7 +32,14 @@ const Page = () => {
             backgroundColor: "#f4fade",
           }}
         >
-          <AccordionSummary expandIcon={<ArrowDownward />}>
+          <AccordionSummary
+            sx={{
+              "&:hover": {
+                backgroundColor: "#bcc2a7",
+              },
+            }}
+            expandIcon={<ArrowDownward />}
+          >
             <DropDownHeader category={category} />
           </AccordionSummary>
           <AccordionDetails sx={{ pt: 0, px: { xs: 2, md: 4 } }}>

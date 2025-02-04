@@ -1,16 +1,35 @@
 "use client";
-import { Box, Button, Grid2, Typography } from "@mui/material";
+import { Box, Button, Fade, Grid2, Typography } from "@mui/material";
 import { Call, LocationOn } from "@mui/icons-material";
 import ServiceItem from "./components/ServiceItem";
 import ServicesGrid from "./components/ServicesGrid";
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export default function Home() {
   const targetBoxRef = useRef<HTMLDivElement | null>(null);
 
-  // Function to scroll to the target box
+  const [textVisible, setTextVisible] = useState(false);
+
+  useEffect(() => {
+    setTextVisible(true);
+  }, []);
   const handleScroll = () => {
     if (targetBoxRef.current) {
+      {
+        <Typography
+          sx={{
+            fontFamily: "fantasy",
+            textAlign: "center",
+            color: "#9A8464",
+            fontWeight: "700",
+            fontSize: "1.25rem",
+          }}
+        >
+          011 35-72-641
+        </Typography>;
+      }
       targetBoxRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
@@ -50,27 +69,31 @@ export default function Home() {
               mx: { xs: 2, md: 8, xl: 12 },
             }}
           >
-            <Typography
-              variant="h1"
-              sx={{
-                fontFamily: "serif",
-                fontWeight: 700,
-                fontSize: { xs: "2.5rem", md: "4rem" },
-                maxWidth: "560px",
-              }}
-            >
-              Look forward to the dentist
-            </Typography>
-            <Typography
-              variant="h2"
-              sx={{
-                fontFamily: "serif",
-                fontWeight: 400,
-                fontSize: { xs: "1.25rem" },
-              }}
-            >
-              Top-rated clinicians and no judgement, ever.
-            </Typography>
+            <Fade in={textVisible} timeout={2000}>
+              <Box>
+                <Typography
+                  variant="h1"
+                  sx={{
+                    fontFamily: "serif",
+                    fontWeight: 700,
+                    fontSize: { xs: "2.5rem", md: "4rem" },
+                    maxWidth: "560px",
+                  }}
+                >
+                  Look forward to the dentist
+                </Typography>
+                <Typography
+                  variant="h2"
+                  sx={{
+                    fontFamily: "serif",
+                    fontWeight: 400,
+                    fontSize: { xs: "1.25rem" },
+                  }}
+                >
+                  Top-rated clinicians and no judgement, ever.
+                </Typography>
+              </Box>
+            </Fade>
             <Box
               sx={{
                 display: "flex",
@@ -132,8 +155,10 @@ export default function Home() {
           width: "90%",
           mx: { xs: 2, md: 4 },
           my: 8,
+
           borderTop: "4px solid gray",
-          pt: 4,
+          borderBottom: "4px solid gray",
+          py: 8,
           display: "flex",
           flexDirection: "column",
           gap: 4,
@@ -155,7 +180,7 @@ export default function Home() {
         ref={targetBoxRef}
         sx={{
           m: 8,
-          width: { xs: "90%", md: "600" },
+          width: { xs: "90%" },
           height: 400,
           display: "flex",
           alignItems: "center",

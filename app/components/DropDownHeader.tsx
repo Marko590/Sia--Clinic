@@ -20,9 +20,6 @@ const DropDownHeader: React.FC<DropDownHeaderProps> = ({ category }) => {
           alignItems: "center",
           padding: "8px",
           borderBottom: "1px grey solid",
-          "&:hover": {
-            backgroundColor: "#D8DEC1",
-          },
         }}
       >
         <Typography sx={{ flexGrow: 1 }}>{category}</Typography>
