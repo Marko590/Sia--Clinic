@@ -18,7 +18,7 @@ const PageWrapper = ({ children }: { children: React.ReactNode }) => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          backgroundColor: "#d8dec1",
+          backgroundColor: "background.default",
         }}
         disableGutters
       >

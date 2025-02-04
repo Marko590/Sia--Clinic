@@ -20,7 +20,7 @@ const ContactInfo = ({
             sx={{
               fontFamily: "fantasy",
               textAlign: "center",
-              color: "#9A8464",
+              color: "text.secondary",
               fontWeight: "700",
               fontSize: "1.25rem",
             }}
@@ -33,7 +33,7 @@ const ContactInfo = ({
           sx={{
             fontFamily: "fantasy",
             textAlign: "center",
-            color: "#9A8464",
+            color: "text.secondary",
             fontWeight: "700",
             fontSize: "1.25rem",
           }}

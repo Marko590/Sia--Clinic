@@ -31,7 +31,7 @@ const NavBar = () => {
   };
   const pages = NavLinks;
   return (
-    <AppBar position="fixed" sx={{ backgroundColor: "#f4fade" }}>
+    <AppBar color="primary" position="fixed">
       <Box sx={{ maxWidth: "100%", px: 2 }}>
         <Toolbar disableGutters sx={{ py: 1, alignItems: "center" }}>
           <Box
@@ -62,8 +62,15 @@ const NavBar = () => {
                 }}
               >
                 <img src="/SIA_senka.png" style={{ width: "100%" }} />
-                <Typography sx={{ display: { xs: "none", md: "inline" } }}>
-                  Sia dental clinic
+                <Typography
+                  color="white"
+                  sx={{
+                    display: { xs: "none", md: "inline" },
+                    fontWeight: 500,
+                    fontSize: "0.5rem",
+                  }}
+                >
+                  SIA DENTAL CLINIC
                 </Typography>
               </Box>
             </Link>
@@ -79,15 +86,16 @@ const NavBar = () => {
               {pages.map((page) => (
                 <Typography
                   component="a"
+                  color="white"
                   key={page.title}
                   href={page.path}
                   onClick={handleCloseNavMenu}
                   sx={{
+                    fontWeight: "400",
                     my: 2,
                     ml: 4,
-                    fontWeight: 700,
                     fontSize: "1.25rem",
-                    "&:hover": { color: "primary.main" },
+                    "&:hover": { color: "secondary.main" },
                   }}
                 >
                   {page.title}
@@ -100,7 +108,7 @@ const NavBar = () => {
               <IconButton
                 sx={{
                   display: { xs: "flex", md: "none" },
-                  color: "primary.main",
+                  color: "secondary.main",
                 }}
                 onClick={() => (window.location.href = "tel:+381640766222")}
               >
@@ -110,6 +118,7 @@ const NavBar = () => {
                 startIcon={<Call />}
                 variant="outlined"
                 size="large"
+                color="white"
                 sx={{ display: { xs: "none", md: "flex" } }}
                 onClick={() => (window.location.href = "tel:+381640766222")}
               >

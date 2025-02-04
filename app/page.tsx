@@ -1,5 +1,5 @@
 "use client";
-import { Box, Button, Fade, Grid2, Typography } from "@mui/material";
+import { Box, Button, Fade, Grid2, Paper, Typography } from "@mui/material";
 import { Call, LocationOn } from "@mui/icons-material";
 import ServiceItem from "./components/ServiceItem";
 import ServicesGrid from "./components/ServicesGrid";
@@ -22,7 +22,7 @@ export default function Home() {
           sx={{
             fontFamily: "fantasy",
             textAlign: "center",
-            color: "#9A8464",
+            color: "#ffffff",
             fontWeight: "700",
             fontSize: "1.25rem",
           }}
@@ -73,12 +73,12 @@ export default function Home() {
               <Box sx={{ display: "flex", flexDirection: "column" }}>
                 <Typography
                   sx={{
-                    fontSize: { xs: "5rem", md: "10rem" },
+                    fontSize: { xs: "7.5rem", md: "10rem" },
                     maxWidth: "560px",
                     fontWeight: "800",
                     letterSpacing: "0.3em",
                     fontFamily: "serif",
-                    color: "#BC8452",
+                    color: "secondary.main",
                   }}
                 >
                   SIA
@@ -102,9 +102,9 @@ export default function Home() {
               }}
             >
               <Button
+                color="primary"
                 variant="contained"
                 sx={{
-                  bgcolor: "#BC8452",
                   width: "50%",
                   p: 2,
                   fontWeight: 700,
@@ -116,13 +116,12 @@ export default function Home() {
                 LOCATION
               </Button>
               <Button
+                color="primary"
                 variant="outlined"
                 onClick={() => (window.location.href = "tel:+381640766222")}
                 sx={{
                   width: "50%",
                   p: 2,
-                  color: "#BC8452",
-                  borderColor: "#BC8452",
                   fontWeight: 700,
                   letterSpacing: "0.12em",
                   display: { xs: "flex", md: "none" },
@@ -165,6 +164,7 @@ export default function Home() {
       >
         <Typography
           variant="h1"
+          color="primary"
           sx={{
             fontWeight: 700,
             fontSize: { xs: "2.5rem", md: "3rem" },
@@ -174,7 +174,7 @@ export default function Home() {
         </Typography>
         <ServicesGrid />
       </Box>
-      <Box
+      <Paper
         ref={targetBoxRef}
         sx={{
           m: 8,
@@ -182,6 +182,7 @@ export default function Home() {
           height: 400,
           display: "flex",
           alignItems: "center",
+          p: 2,
         }}
       >
         <iframe
@@ -191,7 +192,7 @@ export default function Home() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
-      </Box>
+      </Paper>
     </Box>
   );
 }

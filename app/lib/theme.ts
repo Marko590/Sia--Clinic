@@ -5,17 +5,22 @@ import DM from "./fonts";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#7BB87E",
+      main: "#00796B", // Deep Teal
+      contrastText: "#FFFFFF",
     },
     secondary: {
-      main: "#2e74c9",
-    },
-    text: {
-      primary: "#013e87",
-      secondary: "#2e74c9",
+      main: "#26A69A", // Turquoise
     },
     background: {
-      default: "#f4fade",
+      default: "#FAFAFA", // Light Gray
+      paper: "#FFFFFF",
+    },
+    text: {
+      primary: "#263238", // Dark Blue-Gray
+      secondary: "#4F5B62",
+    },
+    warning: {
+      main: "#FFB300", // Warm Yellow
     },
   },
   components: {
@@ -29,7 +34,7 @@ const theme = createTheme({
     MuiPaper: {
       styleOverrides: {
         root: {
-          borderRadius: "20px",
+          borderRadius: "10px",
         },
       },
     },

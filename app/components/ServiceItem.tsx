@@ -5,7 +5,7 @@ const ServiceItem = ({ service }: { service: Service }) => {
   return (
     <Paper
       elevation={8}
-      sx={{ p: 4, backgroundColor: "#f4fade", height: "100%" }}
+      sx={{ p: 4, backgroundColor: "background.paper", height: "100%" }}
       square
     >
       <Box
@@ -19,7 +19,9 @@ const ServiceItem = ({ service }: { service: Service }) => {
         <Typography
           variant="h1"
           sx={{
+            color: "secondary.main",
             fontSize: { xs: "1.5rem", md: "2rem" },
+            fontWeight: "400",
           }}
         >
           {service.title}
