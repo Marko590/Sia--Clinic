@@ -65,29 +65,28 @@ export default function Home() {
               pt: { xs: 6, md: 0 },
               display: "flex",
               flexDirection: "column",
-              gap: 4,
+              gap: 8,
               mx: { xs: 2, md: 8, xl: 12 },
             }}
           >
-            <Fade in={textVisible} timeout={2000}>
-              <Box>
+            <Fade in={textVisible} timeout={500}>
+              <Box sx={{ display: "flex", flexDirection: "column" }}>
                 <Typography
-                  variant="h1"
                   sx={{
-                    fontFamily: "serif",
-                    fontWeight: 700,
-                    fontSize: { xs: "2.5rem", md: "4rem" },
+                    fontSize: { xs: "5rem", md: "10rem" },
                     maxWidth: "560px",
+                    fontWeight: "800",
+                    letterSpacing: "0.3em",
+                    fontFamily: "serif",
+                    color: "#BC8452",
                   }}
                 >
-                  Look forward to the dentist
+                  SIA
                 </Typography>
                 <Typography
                   variant="h2"
                   sx={{
-                    fontFamily: "serif",
-                    fontWeight: 400,
-                    fontSize: { xs: "1.25rem" },
+                    fontSize: { xs: "1.5rem" },
                   }}
                 >
                   Top-rated clinicians and no judgement, ever.
@@ -167,7 +166,6 @@ export default function Home() {
         <Typography
           variant="h1"
           sx={{
-            fontFamily: "serif",
             fontWeight: 700,
             fontSize: { xs: "2.5rem", md: "3rem" },
           }}

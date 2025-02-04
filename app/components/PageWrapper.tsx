@@ -8,13 +8,13 @@ const PageWrapper = ({ children }: { children: React.ReactNode }) => {
         minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
-        mt: { xs: "68px", md: "78px" },
       }}
     >
       <Container
         maxWidth={false}
         sx={{
           flex: 1,
+          pt: { xs: "68px", md: "78px" },
           display: "flex",
           flexDirection: "column",
           alignItems: "center",

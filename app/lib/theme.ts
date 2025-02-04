@@ -1,10 +1,11 @@
 "use client";
 import { createTheme } from "@mui/material";
-
+import localFont from "next/font/local";
+import DM from "./fonts";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#4584ad",
+      main: "#7BB87E",
     },
     secondary: {
       main: "#2e74c9",
@@ -25,23 +26,23 @@ const theme = createTheme({
         },
       },
     },
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          borderRadius: "20px",
+        },
+      },
+    },
   },
   typography: {
     allVariants: {
       color: "#6b6b6a",
-    },
-    h1: {
-      color: "#BC8452",
-      fontSize: "3rem",
-      fontWeight: 600,
+      fontFamily: "var(--font-inter)",
+      fontWeight: "200",
     },
     h2: {
-      fontSize: "1.75rem",
-      fontWeight: 600,
-    },
-    h3: {
-      fontSize: "1.5rem",
-      fontWeight: 600,
+      fontWeight: "200",
+      fontStyle: "italic",
     },
   },
 });

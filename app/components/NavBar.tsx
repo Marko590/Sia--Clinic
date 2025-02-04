@@ -57,9 +57,14 @@ const NavBar = () => {
                   justifyContent: { xs: "center", md: "flex-start" },
                   flexGrow: { xs: 0, md: 0 },
                   width: { xs: "100px", md: "150px" },
+                  flexDirection: { sx: "row", md: "column" },
+                  alignItems: "center",
                 }}
               >
                 <img src="/SIA_senka.png" style={{ width: "100%" }} />
+                <Typography sx={{ display: { xs: "none", md: "inline" } }}>
+                  Sia dental clinic
+                </Typography>
               </Box>
             </Link>
 

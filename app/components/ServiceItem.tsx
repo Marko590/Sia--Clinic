@@ -19,8 +19,6 @@ const ServiceItem = ({ service }: { service: Service }) => {
         <Typography
           variant="h1"
           sx={{
-            fontFamily: "serif",
-            fontWeight: 700,
             fontSize: { xs: "1.5rem", md: "2rem" },
           }}
         >
@@ -30,8 +28,6 @@ const ServiceItem = ({ service }: { service: Service }) => {
         <Typography
           variant="h2"
           sx={{
-            fontFamily: "serif",
-            fontWeight: 400,
             fontSize: { xs: "1.25rem", md: "1.5rem" },
             width: "80%",
           }}

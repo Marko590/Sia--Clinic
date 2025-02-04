@@ -24,16 +24,27 @@ const Page = () => {
     servicesByCategory[service.category].push(service);
   });
   return (
-    <Box sx={{ width: { xs: "100%", md: "80%" }, px: { xs: 2 }, pt: 10 }}>
+    <Box
+      sx={{
+        width: { xs: "100%", md: "80%" },
+        px: { xs: 2 },
+        pt: 10,
+        display: "flex",
+        flexDirection: "column",
+        gap: 2,
+      }}
+    >
       {Object.keys(servicesByCategory).map((category) => (
         <Accordion
           sx={{
             width: "100%",
             backgroundColor: "#f4fade",
+            borderRadius: "20px",
           }}
         >
           <AccordionSummary
             sx={{
+              borderRadius: "20px",
               "&:hover": {
                 backgroundColor: "#bcc2a7",
               },
@@ -42,7 +53,7 @@ const Page = () => {
           >
             <DropDownHeader category={category} />
           </AccordionSummary>
-          <AccordionDetails sx={{ pt: 0, px: { xs: 2, md: 4 } }}>
+          <AccordionDetails sx={{ pt: 0, px: { xs: 2, md: 6 } }}>
             <TableContainer>
               <Table>
                 <TableBody>
