@@ -54,14 +54,14 @@ const Contact = () => {
           display: "flex",
           flexDirection: { xs: "column", md: "row" },
           p: 4,
-          width: "80%",
+          width: { xs: "95%", md: "80%" },
           gap: 4,
         }}
       >
         <Paper
           elevation={10}
           sx={{
-            width: { xs: "100%", md: "600" },
+            width: "100%",
             flex: 1,
             display: "flex",
             alignItems: "center",
