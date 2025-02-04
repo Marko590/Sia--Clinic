@@ -61,13 +61,21 @@ const NavBar = () => {
                   alignItems: "center",
                 }}
               >
-                <img src="/SIA_senka.png" style={{ width: "100%" }} />
+                <img
+                  src="/SIA_senka.png"
+                  style={{
+                    width: "100%",
+                  }}
+                />
                 <Typography
                   color="white"
                   sx={{
                     display: { xs: "none", md: "inline" },
-                    fontWeight: 500,
+                    fontWeight: 800,
                     fontSize: "0.5rem",
+                    "&:hover": {
+                      color: "secondary.main",
+                    },
                   }}
                 >
                   SIA DENTAL CLINIC
@@ -119,7 +127,7 @@ const NavBar = () => {
                 variant="outlined"
                 size="large"
                 color="white"
-                sx={{ display: { xs: "none", md: "flex" } }}
+                sx={{ display: { xs: "none", md: "flex" }, fontWeight: "300" }}
                 onClick={() => (window.location.href = "tel:+381640766222")}
               >
                 +381640766222

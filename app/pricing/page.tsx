@@ -14,9 +14,18 @@ import React from "react";
 import DropDownHeader from "../components/DropDownHeader";
 import { PriceItem } from "../lib/types";
 import * as data from "../lib/data";
-const Page = () => {
+import path from "path";
+import fs from "fs";
+
+async function getPriceList() {
+  const res = await fetch("http://localhost:3000/priceList.json");
+  return res.json();
+}
+
+export default async function Page() {
   const servicesByCategory: Record<string, PriceItem[]> = {};
-  const priceList = data.PriceList;
+  const priceList = await getPriceList();
+
   priceList.forEach((service: PriceItem) => {
     if (!servicesByCategory[service.category]) {
       servicesByCategory[service.category] = [];
@@ -87,6 +96,4 @@ const Page = () => {
       ))}
     </Box>
   );
-};
-
-export default Page;
+}

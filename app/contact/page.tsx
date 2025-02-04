@@ -19,7 +19,7 @@ const Contact = () => {
       <Box
         sx={{
           position: "relative",
-          width: "300px", // Set width to 100% of the container's width
+          width: "200px", // Set width to 100% of the container's width
           height: "100px", // Let the height auto-adjust based on the image's aspect ratio
           display: "flex",
           justifyContent: "center",
@@ -37,14 +37,16 @@ const Contact = () => {
             backgroundPosition: "center",
             backgroundSize: "contain",
             backgroundRepeat: "no-repeat",
-            filter: "blur(2px) grayscale(50%)",
+            filter: "blur(3px) grayscale(50%)",
             transition: "filter 0.5s ease",
             "&:hover": {
               filter: "blur(0px)",
             },
           }}
         />
-        <Typography sx={{ position: "relative", fontSize: "2rem" }}>
+        <Typography
+          sx={{ position: "relative", fontSize: "2.5rem", fontWeight: "200" }}
+        >
           KONTAKT
         </Typography>
       </Box>
