@@ -15,3 +15,9 @@ export interface PriceItem {
   price: number;
   category: string;
 }
+export interface EmployeeCardInfo {
+  id: string;
+  name: string;
+  shortBio: string;
+  image: string;
+}

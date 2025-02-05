@@ -2,9 +2,11 @@
 import { ArrowForward } from "@mui/icons-material";
 import { Box, Paper, Typography } from "@mui/material";
 import React, { useState } from "react";
+import { EmployeeCardInfo } from "../lib/types";
 
-const EmployeeInfo = () => {
+const EmployeeInfo = ({ id, name, shortBio, image }: EmployeeCardInfo) => {
   const [isHovered, setIsHovered] = useState(false);
+
   return (
     <Paper
       elevation={10}
@@ -29,12 +31,7 @@ const EmployeeInfo = () => {
           }}
         >
           <Typography sx={{ fontSize: "1.25rem", wordBreak: "break-all" }}>
-            With over 10 years of experience in general and cosmetic dentistry,
-            Dr. Stefan Raičević is committed to providing high-quality,
-            compassionate care to patients of all ages. Specializing in
-            preventive care, restorative treatments, and smile makeovers, Dr.
-            Raičević combines advanced techniques with a gentle approach to make
-            every visit comfortable and stress-free.
+            {shortBio}
           </Typography>
         </Paper>
 
@@ -100,7 +97,7 @@ const EmployeeInfo = () => {
               color="primary"
               sx={{ fontWeight: "500", fontSize: "1.5rem" }}
             >
-              Dr. Stefan Raičević
+              {name}
             </Typography>
           </Paper>
         </Box>
