@@ -5,7 +5,7 @@ const PageWrapper = ({ children }: { children: React.ReactNode }) => {
   return (
     <Box
       sx={{
-        minHeight: "100vh",
+        minHeight: "80vh",
         display: "flex",
         flexDirection: "column",
       }}
