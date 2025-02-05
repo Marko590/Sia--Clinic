@@ -20,18 +20,24 @@ const NavBar = () => {
     null,
   );
 
-  // Open mobile menu
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
   };
 
-  // Close mobile menu
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
   const pages = NavLinks;
   return (
-    <AppBar color="primary" position="fixed">
+    <AppBar
+      sx={{
+        width: "95%",
+        mt: 1,
+        transform: "translateX(-2.5%)",
+      }}
+      color="primary"
+      position="fixed"
+    >
       <Box sx={{ maxWidth: "100%", px: 2 }}>
         <Toolbar disableGutters sx={{ py: 1, alignItems: "center" }}>
           <Box
