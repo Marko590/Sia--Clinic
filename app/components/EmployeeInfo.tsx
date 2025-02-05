@@ -1,6 +1,6 @@
 "use client";
 import { ArrowForward } from "@mui/icons-material";
-import { Box, Paper, Typography } from "@mui/material";
+import { Box, Link, Paper, Typography } from "@mui/material";
 import React, { useState } from "react";
 import { EmployeeCardInfo } from "../lib/types";
 
@@ -44,8 +44,9 @@ const EmployeeInfo = ({ id, name, shortBio, image }: EmployeeCardInfo) => {
             gap: 2,
           }}
         >
-          <Paper
-            elevation={3}
+          <Box
+            component="a"
+            href={`/about-us/${id}`}
             sx={{
               display: "flex",
               flex: 6,
@@ -83,7 +84,8 @@ const EmployeeInfo = ({ id, name, shortBio, image }: EmployeeCardInfo) => {
                 transition: "opacity 0.3s ease",
               }}
             />
-          </Paper>
+          </Box>
+
           <Paper
             elevation={4}
             sx={{
