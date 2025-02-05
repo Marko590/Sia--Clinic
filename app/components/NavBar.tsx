@@ -42,9 +42,9 @@ const NavBar = () => {
               alignItems: "center",
             }}
           >
-            {/* Mobile menu button (fixed click issue) */}
+            {/* Mobile menu button */}
             <Box sx={{ display: { xs: "flex", md: "none" } }}>
-              <IconButton onClick={handleOpenNavMenu}>
+              <IconButton color="secondary" onClick={handleOpenNavMenu}>
                 <MenuIcon />
               </IconButton>
             </Box>

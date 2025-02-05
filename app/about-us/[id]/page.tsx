@@ -3,9 +3,15 @@ import Image from "next/image";
 import { Box, Typography } from "@mui/material";
 import { useParams } from "next/navigation";
 import React from "react";
+import { employeeInfo } from "@/app/lib/data";
+import { EmployeePageInfo } from "@/app/lib/types";
 
 const Page = () => {
   const { id } = useParams();
+  const employee: EmployeePageInfo = employeeInfo.find(
+    (employee) => employee.id === id,
+  );
+
   return (
     <Box
       sx={{
@@ -36,7 +42,7 @@ const Page = () => {
             fontWeight: "600",
           }}
         >
-          Dr. Stefan Raičević
+          {employee.name}
         </Typography>
 
         <Typography
@@ -45,12 +51,7 @@ const Page = () => {
             fontSize: { xs: "1.25rem", md: "1.5rem" },
           }}
         >
-          With over 10 years of experience in general and cosmetic dentistry,
-          Dr. Stefan Raičević is committed to providing high-quality,
-          compassionate care to patients of all ages. Specializing in preventive
-          care, restorative treatments, and smile makeovers, Dr. Raičević
-          combines advanced techniques with a gentle approach to make every
-          visit comfortable and stress-free."
+          {employee.bio}
         </Typography>
       </Box>
       <Box
@@ -62,8 +63,8 @@ const Page = () => {
         }}
       >
         <Image
-          src="/drStefan.png"
-          alt="Dr. Stefan"
+          src={"/" + employee.image}
+          alt={employee.name}
           layout="fill"
           objectFit="cover"
           style={{ borderRadius: "10px" }}

@@ -21,3 +21,9 @@ export interface EmployeeCardInfo {
   shortBio: string;
   image: string;
 }
+export interface EmployeePageInfo {
+  id: string;
+  name: string;
+  bio: string;
+  image: string;
+}

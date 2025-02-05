@@ -12,10 +12,10 @@ const Page = () => {
         "With over 10 years of experience in general and cosmetic dentistry, Dr. Stefan Raičević is committed to providing high-quality, compassionate care to patients of all ages. Specializing in preventive care, restorative treatments, and smile makeovers, Dr. Raičević combines advanced techniques with a gentle approach to make every visit comfortable and stress-free.",
     },
     {
-      id: "stefan-raicevic",
-      name: "Dr. Stefan Raičević",
+      id: "andrija-banovic",
+      name: "Dr. Andrija Banović",
       shortBio:
-        "With over 10 years of experience in general and cosmetic dentistry, Dr. Stefan Raičević is committed to providing high-quality, compassionate care to patients of all ages. Specializing in preventive care, restorative treatments, and smile makeovers, Dr. Raičević combines advanced techniques with a gentle approach to make every visit comfortable and stress-free.",
+        "With over 10 years of experience in general and cosmetic dentistry, Dr. Andrija Banović is committed to providing high-quality, compassionate care to patients of all ages. Specializing in preventive care, restorative treatments, and smile makeovers, Dr. Banović combines advanced techniques with a gentle approach to make every visit comfortable and stress-free.",
     },
   ];
   return (
