@@ -213,6 +213,7 @@ export default function Home() {
         ref={targetBoxRef}
         sx={{
           m: 8,
+          background: "background.paper",
           width: { xs: "90%" },
           height: { xs: 600, md: 800 },
           display: "flex",

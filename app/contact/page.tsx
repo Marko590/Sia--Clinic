@@ -64,6 +64,7 @@ const Contact = () => {
         <Paper
           elevation={10}
           sx={{
+            background: "background.paper",
             width: "100%",
             flex: 1,
             display: "flex",
