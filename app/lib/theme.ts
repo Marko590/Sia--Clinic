@@ -1,7 +1,5 @@
 "use client";
 import { createTheme } from "@mui/material";
-import localFont from "next/font/local";
-import DM from "./fonts";
 const theme = createTheme({
   palette: {
     primary: {

@@ -45,9 +45,10 @@ const Contact = () => {
           }}
         />
         <Typography
-          sx={{ position: "relative", fontSize: "2.5rem", fontWeight: "200" }}
+          color="primary"
+          sx={{ position: "relative", fontSize: "3rem", fontWeight: "300" }}
         >
-          KONTAKT
+          CONTACT
         </Typography>
       </Box>
 
@@ -75,7 +76,8 @@ const Contact = () => {
         >
           <Typography
             variant="h1"
-            sx={{ textAlign: "center", fontSize: "2.5rem" }}
+            color="primary"
+            sx={{ textAlign: "center", fontSize: "2.5rem", fontWeight: "300" }}
           >
             Schedule an appointment
           </Typography>

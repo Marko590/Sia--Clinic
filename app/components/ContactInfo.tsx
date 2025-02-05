@@ -40,7 +40,7 @@ const ContactInfo = ({
         >
           {subtitle}
         </Typography>
-      )}{" "}
+      )}
     </Box>
   );
 };

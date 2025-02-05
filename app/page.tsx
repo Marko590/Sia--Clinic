@@ -203,7 +203,8 @@ export default function Home() {
           }}
         />
         <Typography
-          sx={{ position: "relative", fontSize: "2.5rem", fontWeight: "200" }}
+          color="primary"
+          sx={{ position: "relative", fontSize: "3rem", fontWeight: "400" }}
         >
           LOCATION
         </Typography>

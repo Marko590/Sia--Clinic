@@ -7,6 +7,7 @@ import NavBar from "./components/NavBar";
 import PageWrapper from "./components/PageWrapper";
 import localFont from "next/font/local";
 import inter from "./lib/fonts";
+import Footer from "./components/Footer";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -36,6 +37,7 @@ export default function RootLayout({
         <ThemeProvider theme={theme}>
           <NavBar />
           <PageWrapper>{children}</PageWrapper>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
