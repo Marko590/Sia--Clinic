@@ -54,5 +54,18 @@
         "image": "drAndrija.png"
       }
     }
+  },
+  "ContactPage": {
+    "title": "Contact",
+    "appointmentTitle": "Schedule an appointment",
+    "workHoursTitle": "Working hours",
+    "workHours": "Mon-Fri 11-19h",
+    "emergencyWorkHours": "Emergency call 00-24h",
+    "phoneTitle": "Phone",
+    "phoneNumber": "+381 64-07-66-222",
+    "addressTitle": "Address",
+    "address": "Bulevar Oslobođenja 241",
+    "emailTitle": "E-mail",
+    "email": "office@siadentalclinic.rs"
   }
 }
