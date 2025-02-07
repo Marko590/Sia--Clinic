@@ -9,13 +9,13 @@ const SparkleText = ({
   style?: React.CSSProperties;
 }) => {
   useEffect(() => {
-    let index = 0,
-      interval = 1000;
-    const rand = (min, max) =>
+    let index = 0;
+    const interval = 1000;
+    const rand = (min: number, max: number) =>
       Math.floor(Math.random() * (max - min + 1)) + min;
     const stars = document.getElementsByClassName("magic-star");
 
-    const animate = (star) => {
+    const animate = (star: HTMLElement) => {
       (star as HTMLElement).style.setProperty(
         "--star-left",
         `${rand(-10, 120)}%`,
@@ -25,7 +25,8 @@ const SparkleText = ({
         `${rand(-10, 50)}%`,
       );
       (star as HTMLElement).style.animation = "none";
-      (star as HTMLElement).offsetHeight; // Forces reflow
+      const height = (star as HTMLElement).offsetHeight;
+      console.log(height);
       (star as HTMLElement).style.animation = "";
     };
     for (const star of Array.from(stars)) {

@@ -5,8 +5,8 @@ const ContactInfo = ({
   title,
   subtitle,
 }: {
-  title: String;
-  subtitle: String | Array<String>;
+  title: string;
+  subtitle: string | Array<string>;
 }) => {
   return (
     <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>

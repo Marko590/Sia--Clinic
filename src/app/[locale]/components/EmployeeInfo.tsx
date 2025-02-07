@@ -2,8 +2,8 @@
 import { ArrowForward } from "@mui/icons-material";
 import { Box, Paper, Typography } from "@mui/material";
 import React, { useState } from "react";
-import { EmployeeCardInfo } from "../lib/types";
 import { Link } from "@/src/i18n/routing";
+import Image from "next/image";
 
 const EmployeeInfo = ({
   id,
@@ -74,8 +74,9 @@ const EmployeeInfo = ({
                   transition: "filter 0.5s ease",
                 }}
               >
-                <img
-                  src="drStefan.png"
+                <Image
+                  alt={name}
+                  src={image || "/default-image.png"}
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 />
               </Box>

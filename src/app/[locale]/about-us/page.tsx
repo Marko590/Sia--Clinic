@@ -1,7 +1,6 @@
-import { Box, Grid2, Typography } from "@mui/material";
+import { Box, Grid2 } from "@mui/material";
 import React from "react";
 import EmployeeInfo from "../components/EmployeeInfo";
-import { EmployeeCardInfo } from "../lib/types";
 import { useTranslations } from "next-intl";
 import SectionTitle from "../components/SectionTitle";
 
@@ -27,7 +26,7 @@ const Page = () => {
         sx={{ alignItems: "stretch", width: "100%" }}
       >
         {staffIds.map((id) => (
-          <Grid2 size={{ xs: 12, lg: 6 }}>
+          <Grid2 key={id} size={{ xs: 12, lg: 6 }}>
             <EmployeeInfo
               id={id}
               name={t(`staff.${id}.name`)}

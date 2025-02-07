@@ -14,7 +14,6 @@ import React from "react";
 import DropDownHeader from "../components/DropDownHeader";
 import { PriceItem } from "../lib/types";
 import SectionTitle from "../components/SectionTitle";
-import { getTranslations } from "next-intl/server";
 
 async function getPriceList(locale: string) {
   const res = await fetch(`http://localhost:3000/priceList_${locale}.json`);
@@ -32,8 +31,6 @@ export default async function Page({ params: { locale } }) {
     servicesByCategory[service.category].push(service);
   });
 
-  const t = await getTranslations("PricingPage");
-
   return (
     <Box
       sx={{
@@ -49,6 +46,7 @@ export default async function Page({ params: { locale } }) {
       <SectionTitle title={"Pricing"} sx={{ my: 6 }} />
       {Object.keys(servicesByCategory).map((category) => (
         <Accordion
+          key={category}
           sx={{
             width: "100%",
             backgroundColor: "#f4fade",

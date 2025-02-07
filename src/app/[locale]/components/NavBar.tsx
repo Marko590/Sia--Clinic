@@ -10,9 +10,10 @@ import {
   Button,
   MenuItem,
 } from "@mui/material";
-import { Menu as MenuIcon, Adb as AdbIcon, Call } from "@mui/icons-material";
+import { Menu as MenuIcon, Call } from "@mui/icons-material";
 import { useTranslations } from "next-intl";
 import { Link } from "@/src/i18n/routing";
+import Image from "next/image";
 
 const navLinks = [
   { key: "services", path: "/services" },
@@ -73,7 +74,8 @@ const NavBar = () => {
                   alignItems: "center",
                 }}
               >
-                <img
+                <Image
+                  alt="Logo"
                   src="/SIA_senka.png"
                   style={{
                     width: "100%",

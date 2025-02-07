@@ -1,4 +1,4 @@
-import { EmployeePageInfo, NavLink, PriceItem } from "./types";
+import { EmployeePageInfo } from "./types";
 
 export const employeeInfo: Array<EmployeePageInfo> = [
   {

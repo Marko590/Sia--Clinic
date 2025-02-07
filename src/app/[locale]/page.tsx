@@ -1,12 +1,11 @@
 "use client";
-import { Box, Button, Fade, Paper, Typography } from "@mui/material";
+import { Box, Button, Fade, Typography } from "@mui/material";
 import { Call, LocationOn } from "@mui/icons-material";
 import ServicesGrid from "./components/ServicesGrid";
 import React, { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import MapPaper from "./components/MapPaper";
 import SectionTitle from "./components/SectionTitle";
-import SvgStar from "./components/SvgStar";
 import SparkleText from "./components/SparkleText";
 
 export default function Home() {

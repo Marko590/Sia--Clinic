@@ -1,25 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@mui/material";
 import theme from "./lib/theme";
 import NavBar from "./components/NavBar";
 import PageWrapper from "./components/PageWrapper";
-import inter from "./lib/fonts";
 import Footer from "./components/Footer";
 import { notFound } from "next/navigation";
 import { routing } from "@/src/i18n/routing";
 import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -36,7 +27,7 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }>) {
-  if (!routing.locales.includes(locale as any)) {
+  if (!routing.locales.includes(locale as (typeof routing.locales)[number])) {
     notFound();
   }
   const messages = await getMessages();

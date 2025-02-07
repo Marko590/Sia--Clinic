@@ -1,6 +1,5 @@
 import React from "react";
-import { Box, Container, Paper, Typography, Button } from "@mui/material";
-import Service from "../lib/types";
+import { Box, Paper, Typography, Button } from "@mui/material";
 import { useTranslations } from "next-intl";
 const ServiceItem = ({ serviceKey }: { serviceKey: string }) => {
   const t = useTranslations("ServiceGrid");
@@ -45,7 +44,7 @@ const ServiceItem = ({ serviceKey }: { serviceKey: string }) => {
             width: "100%",
             display: "flex",
             gap: 2,
-            mt: "auto", // Pushes the buttons to the bottom
+            mt: "auto",
           }}
         >
           <Button
