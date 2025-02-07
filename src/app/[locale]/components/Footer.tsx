@@ -1,14 +1,8 @@
 "use client";
 
+import { Link } from "@/src/i18n/routing";
 import { Instagram } from "@mui/icons-material";
-import {
-  Box,
-  Container,
-  Typography,
-  Link,
-  Divider,
-  useTheme,
-} from "@mui/material";
+import { Box, Container, Typography, Divider, useTheme } from "@mui/material";
 import { useTranslations } from "next-intl";
 const navLinks = [
   { key: "services", path: "/services" },
@@ -52,11 +46,7 @@ export default function Footer() {
             }}
           >
             {t("contactTitle")}
-            <Link
-              href="mailto:office@siadentalclinic.rs"
-              color="primary"
-              sx={{ textAlign: "right" }}
-            >
+            <Link href="mailto:office@siadentalclinic.rs" color="primary">
               {t("email")}
             </Link>
             <Typography sx={{ fontWeight: 200 }}>
@@ -132,11 +122,11 @@ export default function Footer() {
           </Typography>
 
           <Box sx={{ display: "flex", justifyContent: "center" }}>
-            <Link href="/privacy-policy" color="secondary" sx={{ mx: 1 }}>
+            <Link href="/privacy-policy" color="secondary">
               {t("privacyPolicy")}
             </Link>
 
-            <Link href="/terms" color="secondary" sx={{ mx: 1 }}>
+            <Link href="/terms" color="secondary">
               {t("termsOfService")}
             </Link>
           </Box>

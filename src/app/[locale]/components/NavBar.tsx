@@ -11,8 +11,8 @@ import {
   MenuItem,
 } from "@mui/material";
 import { Menu as MenuIcon, Adb as AdbIcon, Call } from "@mui/icons-material";
-import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { Link } from "@/src/i18n/routing";
 
 const navLinks = [
   { key: "services", path: "/services" },
@@ -104,22 +104,22 @@ const NavBar = () => {
               }}
             >
               {navLinks.map((link) => (
-                <Typography
-                  component="a"
-                  color="white"
-                  key={link.key}
-                  href={link.path}
-                  onClick={handleCloseNavMenu}
-                  sx={{
-                    fontWeight: "400",
-                    my: 2,
-                    ml: 4,
-                    fontSize: "1.25rem",
-                    "&:hover": { color: "secondary.main" },
-                  }}
-                >
-                  {tLinks(`links.${link.key}`)}
-                </Typography>
+                <Link href={link.path}>
+                  <Typography
+                    color="white"
+                    key={link.key}
+                    onClick={handleCloseNavMenu}
+                    sx={{
+                      fontWeight: "400",
+                      my: 2,
+                      ml: 4,
+                      fontSize: "1.25rem",
+                      "&:hover": { color: "secondary.main" },
+                    }}
+                  >
+                    {tLinks(`links.${link.key}`)}
+                  </Typography>
+                </Link>
               ))}
             </Box>
 
