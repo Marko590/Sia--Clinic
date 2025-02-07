@@ -1,0 +1,31 @@
+{
+  "HomePage": {
+    "title": "SIA",
+    "subtitle": "Top-rated clinicians and no judgement, ever.",
+    "locationButton": "LOCATION",
+    "callNowButton": "CALL NOW",
+    "services": { "title": "Services we offer" },
+    "locationTitle": "LOCATION"
+  },
+  "sharedLinks": {
+    "links": {
+      "services": "Services",
+      "pricing": "Pricing",
+      "aboutUs": "About us",
+      "contact": "Contact"
+    }
+  },
+  "NavBar": {
+    "title": "SIA DENTAL CLINIC",
+    "telephoneNumber": "+381640766222"
+  },
+  "Footer": {
+    "contactTitle": "Contact:",
+    "telephoneNumber": "Telephone: +381 64-07-66-222",
+    "email": "office@siadentalclinic.rs",
+    "address": "Address: Bulevar Oslobođenja 241",
+    "socialsTitle": "Socials:",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  }
+}

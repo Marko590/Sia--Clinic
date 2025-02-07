@@ -4,14 +4,13 @@ import { Call, LocationOn } from "@mui/icons-material";
 import ServiceItem from "./components/ServiceItem";
 import ServicesGrid from "./components/ServicesGrid";
 import React, { useEffect, useRef, useState } from "react";
-import { useTranslation } from "react-i18next";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslations } from "next-intl";
 
 export default function Home() {
   const targetBoxRef = useRef<HTMLDivElement | null>(null);
 
   const [textVisible, setTextVisible] = useState(false);
-
+  const t = useTranslations("HomePage");
   useEffect(() => {
     setTextVisible(true);
   }, []);
@@ -81,7 +80,7 @@ export default function Home() {
                     color: "secondary.main",
                   }}
                 >
-                  SIA
+                  {t("title")}
                 </Typography>
                 <Typography
                   variant="h2"
@@ -89,7 +88,7 @@ export default function Home() {
                     fontSize: { xs: "1.5rem" },
                   }}
                 >
-                  Top-rated clinicians and no judgement, ever.
+                  {t("subtitle")}
                 </Typography>
               </Box>
             </Fade>
@@ -113,7 +112,7 @@ export default function Home() {
                 startIcon={<LocationOn />}
                 onClick={handleScroll}
               >
-                LOCATION
+                {t("locationButton")}
               </Button>
               <Button
                 color="primary"
@@ -128,7 +127,7 @@ export default function Home() {
                 }}
                 startIcon={<Call />}
               >
-                CALL NOW
+                {t("callNowButton")}
               </Button>
             </Box>
           </Box>
@@ -170,7 +169,7 @@ export default function Home() {
             fontSize: { xs: "2.5rem", md: "3rem" },
           }}
         >
-          Services we offer
+          {t("services.title")}
         </Typography>
         <ServicesGrid />
       </Box>
@@ -206,7 +205,7 @@ export default function Home() {
           color="primary"
           sx={{ position: "relative", fontSize: "3rem", fontWeight: "400" }}
         >
-          LOCATION
+          {t("locationTitle")}
         </Typography>
       </Box>
       <Paper

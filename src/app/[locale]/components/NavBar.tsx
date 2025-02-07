@@ -7,19 +7,26 @@ import {
   IconButton,
   Typography,
   Menu,
-  Container,
   Button,
   MenuItem,
 } from "@mui/material";
 import { Menu as MenuIcon, Adb as AdbIcon, Call } from "@mui/icons-material";
-import { NavLinks } from "../lib/data";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
+const navLinks = [
+  { key: "services", path: "/services" },
+  { key: "pricing", path: "/pricing" },
+  { key: "aboutUs", path: "/about-us" },
+  { key: "contact", path: "/contact" },
+];
+navLinks.map((link) => console.log(link));
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null,
   );
-
+  const t = useTranslations("NavBar");
+  const tLinks = useTranslations("sharedLinks");
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -27,7 +34,6 @@ const NavBar = () => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-  const pages = NavLinks;
   return (
     <AppBar
       sx={{
@@ -84,7 +90,7 @@ const NavBar = () => {
                     },
                   }}
                 >
-                  SIA DENTAL CLINIC
+                  {t("title")}
                 </Typography>
               </Box>
             </Link>
@@ -97,12 +103,12 @@ const NavBar = () => {
                 ml: 2,
               }}
             >
-              {pages.map((page) => (
+              {navLinks.map((link) => (
                 <Typography
                   component="a"
                   color="white"
-                  key={page.title}
-                  href={page.path}
+                  key={link.key}
+                  href={link.path}
                   onClick={handleCloseNavMenu}
                   sx={{
                     fontWeight: "400",
@@ -112,7 +118,7 @@ const NavBar = () => {
                     "&:hover": { color: "secondary.main" },
                   }}
                 >
-                  {page.title}
+                  {tLinks(`links.${link.key}`)}
                 </Typography>
               ))}
             </Box>
@@ -154,10 +160,12 @@ const NavBar = () => {
             display: { xs: "absolute", md: "none", width: "auto", left: 0 },
           }}
         >
-          {pages.map((page) => (
-            <Link href={page.path}>
-              <MenuItem key={page.title} onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">{page.title}</Typography>
+          {navLinks.map((link) => (
+            <Link href={link.path}>
+              <MenuItem key={link.key} onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">
+                  {tLinks(`links.${link.key}`)}
+                </Typography>
               </MenuItem>
             </Link>
           ))}
