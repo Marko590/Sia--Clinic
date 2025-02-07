@@ -1,0 +1,106 @@
+{
+  "HomePage": {
+    "title": "SIA",
+    "subtitle": "Najbolji zubari i bez osuđivanja, ikada.",
+    "locationButton": "LOKACIJA",
+    "callNowButton": "POZOVITE SAD",
+    "services": { "title": "Usluge koje pružamo" },
+    "locationTitle": "LOKACIJA"
+  },
+
+  "ServiceGrid": {
+    "bookButton": "Rezerviši",
+    "moreButton": "Više",
+    "services": {
+      "dentalExam": {
+        "title": "Stomatološki pregled",
+        "subTitle": "Čišćenje, rendgenski snimci, & oralni pregled.",
+        "link": "/service1",
+        "pictureUrl": "/images/service1.jpg"
+      },
+      "orthodontics": {
+        "title": "Ortodoncija",
+        "subTitle": "Proteze i Invisalign",
+        "link": "/service2",
+        "pictureUrl": "/images/service2.jpg"
+      },
+      "procedures": {
+        "title": "Tretmani",
+        "subTitle": "Plombe, implantati, krunice, & još mnogo toga.",
+        "link": "/service3",
+        "pictureUrl": "/images/service3.jpg"
+      },
+      "emergency": {
+        "title": "Hitni slučajevi",
+        "subTitle": "Hitni pregledi zbog bola, slomljenih zuba & još mnogo toga.",
+        "link": "/service4",
+        "pictureUrl": "/images/service4.jpg"
+      }
+    }
+  },
+
+  "sharedLinks": {
+    "links": {
+      "services": "Usluge",
+      "pricing": "Cene",
+      "aboutUs": "O nama",
+      "contact": "Kontakt"
+    }
+  },
+  "NavBar": {
+    "title": "SIA DENTAL CLINIC",
+    "telephoneNumber": "+381640766222"
+  },
+  "Footer": {
+    "contactTitle": "Kontakt:",
+    "telephoneNumber": "Telefon: 064-07-66-222",
+    "email": "office@siadentalclinic.rs",
+    "address": "Adresa: Bulevar Oslobođenja 241",
+    "socialsTitle": "Društvene mreže:",
+    "privacyPolicy": "Politika privatnosti",
+    "termsOfService": "Uslovi korišćenja"
+  },
+  "About": {
+    "staffTitle": "OSOBLJE",
+    "staff": {
+      "stefan-raicevic": {
+        "name": "Dr. Stefan Raičević",
+        "shortBio": "Sa više od 10 godina iskustva u opštoj i estetskoj stomatologiji, Dr. Stefan Raičević je posvećen pružanju visokokvalitetne, saosećajne nege pacijentima svih uzrasta. Specijalizovan za preventivnu negu i restorativne tretmane Dr. Raičević kombinuje napredne tehnike sa nežnim pristupom kako bi svaka poseta bila udobna i bez stresa."
+      },
+      "andrija-banovic": {
+        "name": "Dr. Andrija Banović",
+        "shortBio": "Sa više od 10 godina iskustva u opštoj i estetskoj stomatologiji, Dr. Andrija Banović je posvećen pružanju visokokvalitetne, saosećajne nege pacijentima svih uzrasta. Specijalizovan za preventivnu negu i restorativne tretmane Dr. Banović kombinuje napredne tehnike sa nežnim pristupom kako bi svaka poseta bila udobna i bez stresa."
+      }
+    }
+  },
+  "DoctorInfoPage": {
+    "staff": {
+      "stefan-raicevic": {
+        "name": "Dr. Stefan Raičević",
+        "bio": "Sa više od 10 godina iskustva u opštoj i estetskoj stomatologiji, Dr. Stefan Raičević je posvećen pružanju visokokvalitetne, saosećajne brige za pacijente svih uzrasta. Specijalizovan za preventivnu negu, restorativne tretmane i preobrazbe osmeha, Dr. Raičević kombinuje napredne tehnike sa nežnim pristupom kako bi svaka poseta bila udobna i bez stresa.",
+        "image": "drStefan.png"
+      },
+      "andrija-banovic": {
+        "name": "Dr. Andrija Banović",
+        "bio": "Sa više od 10 godina iskustva u opštoj i estetskoj stomatologiji, Dr. Stefan Raičević je posvećen pružanju visokokvalitetne, saosećajne brige za pacijente svih uzrasta. Specijalizovan za preventivnu negu, restorativne tretmane i preobrazbe osmeha, Dr. Raičević kombinuje napredne tehnike sa nežnim pristupom kako bi svaka poseta bila udobna i bez stresa.",
+        "image": "drAndrija.png"
+      }
+    }
+  },
+  "ContactPage": {
+    "title": "Kontakt",
+    "appointmentTitle": "Zakazivanje pregleda",
+    "workHoursTitle": "Radno vreme",
+    "workHours": "Pon-Pet 11-19h",
+    "emergencyWorkHours": "Hitne intervencije 00-24h",
+    "phoneTitle": "Telefon",
+    "phoneNumber": "064-07-66-222",
+    "addressTitle": "Adresa",
+    "address": "Bulevar Oslobođenja 241",
+    "emailTitle": "E-mail",
+    "email": "office@siadentalclinic.rs"
+  },
+  "PricingPage": {
+    "priceTitle": "Cena (RSD)"
+  }
+}

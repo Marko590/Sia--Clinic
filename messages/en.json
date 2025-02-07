@@ -1,0 +1,105 @@
+{
+  "HomePage": {
+    "title": "SIA",
+    "subtitle": "Top-rated clinicians and no judgement, ever.",
+    "locationButton": "LOCATION",
+    "callNowButton": "CALL NOW",
+    "services": { "title": "Services we offer" },
+    "locationTitle": "LOCATION"
+  },
+  "ServiceGrid": {
+    "bookButton": "Book",
+    "moreButton": "More",
+    "services": {
+      "dentalExam": {
+        "title": "Dental Exam",
+        "subTitle": "Cleaning, x-rays, & oral exam.",
+        "link": "/service1",
+        "pictureUrl": "/images/service1.jpg"
+      },
+      "orthodontics": {
+        "title": "Orthodontics",
+        "subTitle": "Breezy Braces & Invisalign",
+        "link": "/service2",
+        "pictureUrl": "/images/service2.jpg"
+      },
+      "procedures": {
+        "title": "Procedures",
+        "subTitle": "Fillings, implants, crowns, & more.",
+        "link": "/service3",
+        "pictureUrl": "/images/service3.jpg"
+      },
+      "emergency": {
+        "title": "Emergency",
+        "subTitle": "Urgent appointments for pain, cracked teeth & more.",
+        "link": "/service4",
+        "pictureUrl": "/images/service4.jpg"
+      }
+    }
+  },
+
+  "sharedLinks": {
+    "links": {
+      "services": "Services",
+      "pricing": "Pricing",
+      "aboutUs": "About us",
+      "contact": "Contact"
+    }
+  },
+  "NavBar": {
+    "title": "SIA DENTAL CLINIC",
+    "telephoneNumber": "+381640766222"
+  },
+  "Footer": {
+    "contactTitle": "Contact:",
+    "telephoneNumber": "Telephone: +381 64-07-66-222",
+    "email": "office@siadentalclinic.rs",
+    "address": "Address: Bulevar Oslobođenja 241",
+    "socialsTitle": "Socials:",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  },
+  "About": {
+    "staffTitle": "STAFF",
+    "staff": {
+      "stefan-raicevic": {
+        "name": "Dr. Stefan Raičević",
+        "shortBio": "With over 10 years of experience in general and cosmetic dentistry, Dr. Stefan Raičević is committed to providing high-quality, compassionate care to patients of all ages. Specializing in preventive care, restorative treatments, and smile makeovers, Dr. Raičević combines advanced techniques with a gentle approach to make every visit comfortable and stress-free."
+      },
+      "andrija-banovic": {
+        "name": "Dr. Andrija Banović",
+        "shortBio": "With over 10 years of experience in general and cosmetic dentistry, Dr. Andrija Banović is committed to providing high-quality, compassionate care to patients of all ages. Specializing in preventive care, restorative treatments, and smile makeovers, Dr. Banović combines advanced techniques with a gentle approach to make every visit comfortable and stress-free."
+      }
+    }
+  },
+  "DoctorInfoPage": {
+    "staff": {
+      "stefan-raicevic": {
+        "name": "Dr. Stefan Raičević",
+        "bio": "Wit over 10 years of experience in general and cosmetic dentistry, Dr. Stefan Raičević is committed to providing high-quality, compassionate care to patients of all ages. Specializing in preventive care, restorative treatments, and smile makeovers, Dr. Raičević combines advanced techniques with a gentle approach to make every visit comfortable and stress-free.",
+        "image": "drStefan.png"
+      },
+      "andrija-banovic": {
+        "name": "Dr. Andrija Banović",
+        "bio": "Wit over 10 years of experience in general and cosmetic dentistry, Dr. Stefan Raičević is committed to providing high-quality, compassionate care to patients of all ages. Specializing in preventive care, restorative treatments, and smile makeovers, Dr. Raičević combines advanced techniques with a gentle approach to make every visit comfortable and stress-free.",
+        "image": "drAndrija.png"
+      }
+    }
+  },
+  "ContactPage": {
+    "title": "Contact",
+    "appointmentTitle": "Schedule an appointment",
+    "workHoursTitle": "Working hours",
+    "workHours": "Mon-Fri 11-19h",
+    "emergencyWorkHours": "Emergency call 00-24h",
+    "phoneTitle": "Phone",
+    "phoneNumber": "+381 64-07-66-222",
+    "addressTitle": "Address",
+    "address": "Bulevar Oslobođenja 241",
+    "emailTitle": "E-mail",
+    "email": "office@siadentalclinic.rs"
+  },
+  "PricingPage": {
+    "priceTitle": "Price (RSD)"
+  }
+}

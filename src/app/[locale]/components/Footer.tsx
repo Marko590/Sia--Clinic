@@ -1,19 +1,19 @@
 "use client";
 
+import { Link } from "@/src/i18n/routing";
 import { Instagram } from "@mui/icons-material";
-import {
-  Box,
-  Container,
-  Typography,
-  Link,
-  Divider,
-  useTheme,
-} from "@mui/material";
-import { NavLinks } from "../lib/data";
-
+import { Box, Container, Typography, Divider, useTheme } from "@mui/material";
+import { useTranslations } from "next-intl";
+const navLinks = [
+  { key: "services", path: "/services" },
+  { key: "pricing", path: "/pricing" },
+  { key: "aboutUs", path: "/about-us" },
+  { key: "contact", path: "/contact" },
+];
 export default function Footer() {
   const theme = useTheme();
-  const navLinks = NavLinks;
+  const t = useTranslations("Footer");
+  const tLinks = useTranslations("sharedLinks");
   return (
     <Box
       component="footer"
@@ -45,20 +45,12 @@ export default function Footer() {
               gap: { xs: 1, md: 2 },
             }}
           >
-            Contact:
-            <Link
-              href="mailto:office@siadentalclinic.rs"
-              color="primary"
-              sx={{ textAlign: "right" }}
-            >
-              office@siadentalclinic.rs
-            </Link>
+            {t("contactTitle")}
+            <Link href="mailto:office@siadentalclinic.rs">{t("email")}</Link>
             <Typography sx={{ fontWeight: 200 }}>
-              Telephone: +381 64-07-66-222
+              {t("telephoneNumber")}
             </Typography>
-            <Typography sx={{ fontWeight: 200 }}>
-              Address: Bulevar Oslobođenja 241
-            </Typography>
+            <Typography sx={{ fontWeight: 200 }}>{t("address")}</Typography>
           </Box>
           <Box
             sx={{
@@ -71,8 +63,8 @@ export default function Footer() {
           >
             Links:
             {navLinks.map((link) => (
-              <Link key={link.title} href={link.path}>
-                {link.title}
+              <Link key={link.key} href={link.path}>
+                {tLinks(`links.${link.key}`)}
               </Link>
             ))}
           </Box>
@@ -86,7 +78,7 @@ export default function Footer() {
               gap: 2,
             }}
           >
-            Socials:
+            {t("socialsTitle")}
             <Typography
               color="primary"
               component="a"
@@ -128,12 +120,12 @@ export default function Footer() {
           </Typography>
 
           <Box sx={{ display: "flex", justifyContent: "center" }}>
-            <Link href="/privacy-policy" color="secondary" sx={{ mx: 1 }}>
-              Privacy Policy
+            <Link href="/privacy-policy" color="secondary">
+              {t("privacyPolicy")}
             </Link>
 
-            <Link href="/terms" color="secondary" sx={{ mx: 1 }}>
-              Terms of Service
+            <Link href="/terms" color="secondary">
+              {t("termsOfService")}
             </Link>
           </Box>
         </Box>

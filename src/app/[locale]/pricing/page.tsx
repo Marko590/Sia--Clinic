@@ -13,18 +13,17 @@ import {
 import React from "react";
 import DropDownHeader from "../components/DropDownHeader";
 import { PriceItem } from "../lib/types";
-import * as data from "../lib/data";
-import path from "path";
-import fs from "fs";
+import { useTranslations } from "next-intl";
 
-async function getPriceList() {
-  const res = await fetch("http://localhost:3000/priceList.json");
+async function getPriceList(locale: string) {
+  const res = await fetch(`http://localhost:3000/priceList_${locale}.json`);
   return res.json();
 }
 
-export default async function Page() {
+export default async function Page({ params: { locale } }) {
   const servicesByCategory: Record<string, PriceItem[]> = {};
-  const priceList = await getPriceList();
+
+  const priceList = await getPriceList(locale);
 
   priceList.forEach((service: PriceItem) => {
     if (!servicesByCategory[service.category]) {

@@ -2,8 +2,11 @@ import { Box, Grid2, Typography } from "@mui/material";
 import React from "react";
 import EmployeeInfo from "../components/EmployeeInfo";
 import { EmployeeCardInfo } from "../lib/types";
+import { useTranslations } from "next-intl";
 
 const Page = () => {
+  const t = useTranslations("About");
+  const staffIds = ["stefan-raicevic", "andrija-banovic"];
   const employeeInfo: Array<EmployeeCardInfo> = [
     {
       id: "stefan-raicevic",
@@ -57,7 +60,7 @@ const Page = () => {
           color="primary"
           sx={{ position: "relative", fontSize: "2.5rem", fontWeight: "600" }}
         >
-          STAFF
+          {t("staffTitle")}
         </Typography>
       </Box>
 
@@ -66,9 +69,13 @@ const Page = () => {
         spacing={8}
         sx={{ alignItems: "stretch", width: "100%" }}
       >
-        {employeeInfo.map((employee) => (
+        {staffIds.map((id) => (
           <Grid2 size={{ xs: 12, lg: 6 }}>
-            <EmployeeInfo {...employee} />
+            <EmployeeInfo
+              id={id}
+              name={t(`staff.${id}.name`)}
+              shortBio={t(`staff.${id}.shortBio`)}
+            />
           </Grid2>
         ))}
       </Grid2>

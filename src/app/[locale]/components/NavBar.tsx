@@ -7,19 +7,26 @@ import {
   IconButton,
   Typography,
   Menu,
-  Container,
   Button,
   MenuItem,
 } from "@mui/material";
 import { Menu as MenuIcon, Adb as AdbIcon, Call } from "@mui/icons-material";
-import { NavLinks } from "../lib/data";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/src/i18n/routing";
 
+const navLinks = [
+  { key: "services", path: "/services" },
+  { key: "pricing", path: "/pricing" },
+  { key: "aboutUs", path: "/about-us" },
+  { key: "contact", path: "/contact" },
+];
+navLinks.map((link) => console.log(link));
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null,
   );
-
+  const t = useTranslations("NavBar");
+  const tLinks = useTranslations("sharedLinks");
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -27,7 +34,6 @@ const NavBar = () => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-  const pages = NavLinks;
   return (
     <AppBar
       sx={{
@@ -79,12 +85,14 @@ const NavBar = () => {
                     display: { xs: "none", md: "inline" },
                     fontWeight: 800,
                     fontSize: "0.5rem",
+                    lineHeight: "1",
+                    textAlign: "center",
                     "&:hover": {
                       color: "secondary.main",
                     },
                   }}
                 >
-                  SIA DENTAL CLINIC
+                  {t("title")}
                 </Typography>
               </Box>
             </Link>
@@ -97,23 +105,23 @@ const NavBar = () => {
                 ml: 2,
               }}
             >
-              {pages.map((page) => (
-                <Typography
-                  component="a"
-                  color="white"
-                  key={page.title}
-                  href={page.path}
-                  onClick={handleCloseNavMenu}
-                  sx={{
-                    fontWeight: "400",
-                    my: 2,
-                    ml: 4,
-                    fontSize: "1.25rem",
-                    "&:hover": { color: "secondary.main" },
-                  }}
-                >
-                  {page.title}
-                </Typography>
+              {navLinks.map((link) => (
+                <Link href={link.path}>
+                  <Typography
+                    color="white"
+                    key={link.key}
+                    onClick={handleCloseNavMenu}
+                    sx={{
+                      fontWeight: "400",
+                      my: 2,
+                      ml: 4,
+                      fontSize: "1.25rem",
+                      "&:hover": { color: "secondary.main" },
+                    }}
+                  >
+                    {tLinks(`links.${link.key}`)}
+                  </Typography>
+                </Link>
               ))}
             </Box>
 
@@ -154,10 +162,12 @@ const NavBar = () => {
             display: { xs: "absolute", md: "none", width: "auto", left: 0 },
           }}
         >
-          {pages.map((page) => (
-            <Link href={page.path}>
-              <MenuItem key={page.title} onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">{page.title}</Typography>
+          {navLinks.map((link) => (
+            <Link href={link.path}>
+              <MenuItem key={link.key} onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">
+                  {tLinks(`links.${link.key}`)}
+                </Typography>
               </MenuItem>
             </Link>
           ))}

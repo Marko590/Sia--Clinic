@@ -1,8 +1,10 @@
 import { Box, Paper, Typography } from "@mui/material";
 import React from "react";
 import ContactInfo from "../components/ContactInfo";
+import { useTranslations } from "next-intl";
 
 const Contact = () => {
+  const t = useTranslations("ContactPage");
   return (
     <Box
       sx={{
@@ -48,7 +50,7 @@ const Contact = () => {
           color="primary"
           sx={{ position: "relative", fontSize: "3rem", fontWeight: "300" }}
         >
-          CONTACT
+          {t("title")}
         </Typography>
       </Box>
 
@@ -80,16 +82,16 @@ const Contact = () => {
             color="primary"
             sx={{ textAlign: "center", fontSize: "2.5rem", fontWeight: "300" }}
           >
-            Schedule an appointment
+            {t("appointmentTitle")}
           </Typography>
 
           <ContactInfo
             title="Working hours"
-            subtitle={["Mon-Fri 11-19h", "Emergency call 00-24h"]}
+            subtitle={[t("workHours"), t("emergencyWorkHours")]}
           />
-          <ContactInfo title="Phone" subtitle={"+381 64-07-66-222"} />
-          <ContactInfo title="Address" subtitle={"Bulevar Oslobođenja 241"} />
-          <ContactInfo title="E-mail" subtitle={"office@siadentalclinic.rs"} />
+          <ContactInfo title={t("phoneTitle")} subtitle={t("phoneNumber")} />
+          <ContactInfo title={t("addressTitle")} subtitle={t("address")} />
+          <ContactInfo title={t("emailTitle")} subtitle={t("email")} />
         </Paper>
 
         <Paper

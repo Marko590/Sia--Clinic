@@ -1,7 +1,9 @@
 import React from "react";
 import { Box, Container, Paper, Typography, Button } from "@mui/material";
 import Service from "../lib/types";
-const ServiceItem = ({ service }: { service: Service }) => {
+import { useTranslations } from "next-intl";
+const ServiceItem = ({ serviceKey }: { serviceKey: string }) => {
+  const t = useTranslations("ServiceGrid");
   return (
     <Paper
       elevation={8}
@@ -24,7 +26,7 @@ const ServiceItem = ({ service }: { service: Service }) => {
             fontWeight: "400",
           }}
         >
-          {service.title}
+          {t(`services.${serviceKey}.title`)}
         </Typography>
 
         <Typography
@@ -34,7 +36,7 @@ const ServiceItem = ({ service }: { service: Service }) => {
             width: "80%",
           }}
         >
-          {service.subTitle}
+          {t(`services.${serviceKey}.subTitle`)}
         </Typography>
 
         {/* Buttons always at the bottom */}
@@ -57,7 +59,7 @@ const ServiceItem = ({ service }: { service: Service }) => {
               width: "40%",
             }}
           >
-            Book
+            {t("bookButton")}
           </Button>
           <Button
             variant="outlined"
@@ -72,7 +74,7 @@ const ServiceItem = ({ service }: { service: Service }) => {
               width: "40%",
             }}
           >
-            Book
+            {t("moreButton")}
           </Button>
         </Box>
       </Box>
