@@ -3,14 +3,11 @@ import Image from "next/image";
 import { Box, Typography } from "@mui/material";
 import { useParams } from "next/navigation";
 import React from "react";
-import { employeeInfo } from "@/app/lib/data";
-import { EmployeePageInfo } from "@/app/lib/types";
+import { useTranslations } from "next-intl";
 
 const Page = () => {
   const { id } = useParams();
-  const employee: EmployeePageInfo = employeeInfo.find(
-    (employee) => employee.id === id,
-  );
+  const t = useTranslations("DoctorInfoPage");
 
   return (
     <Box
@@ -42,7 +39,7 @@ const Page = () => {
             fontWeight: "600",
           }}
         >
-          {employee.name}
+          {t(`staff.${id}.name`)}
         </Typography>
 
         <Typography
@@ -51,7 +48,7 @@ const Page = () => {
             fontSize: { xs: "1.25rem", md: "1.5rem" },
           }}
         >
-          {employee.bio}
+          {t(`staff.${id}.bio`)}
         </Typography>
       </Box>
       <Box
@@ -63,8 +60,8 @@ const Page = () => {
         }}
       >
         <Image
-          src={"/" + employee.image}
-          alt={employee.name}
+          src={"/" + t(`staff.${id}.image`)}
+          alt={t(`staff.${id}.name`)}
           layout="fill"
           objectFit="cover"
           style={{ borderRadius: "10px" }}

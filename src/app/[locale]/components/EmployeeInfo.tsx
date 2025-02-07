@@ -1,10 +1,21 @@
 "use client";
 import { ArrowForward } from "@mui/icons-material";
-import { Box, Link, Paper, Typography } from "@mui/material";
+import { Box, Paper, Typography } from "@mui/material";
 import React, { useState } from "react";
 import { EmployeeCardInfo } from "../lib/types";
+import { Link } from "@/src/i18n/routing";
 
-const EmployeeInfo = ({ id, name, shortBio, image }: EmployeeCardInfo) => {
+const EmployeeInfo = ({
+  id,
+  name,
+  shortBio,
+  image,
+}: {
+  id: string;
+  name: string;
+  shortBio: string;
+  image?: string;
+}) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -44,48 +55,47 @@ const EmployeeInfo = ({ id, name, shortBio, image }: EmployeeCardInfo) => {
             gap: 2,
           }}
         >
-          <Box
-            component="a"
-            href={`/about-us/${id}`}
-            sx={{
-              display: "flex",
-              flex: 6,
-              position: "relative",
-              overflow: "hidden",
-            }}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
+          <Link href={`/about-us/${id}`}>
             <Box
               sx={{
-                width: "100%",
-                height: "100%",
-                filter: isHovered ? "blur(7px)" : "blur(0px)",
-                transition: "filter 0.5s ease",
+                display: "flex",
+                flex: 6,
+                position: "relative",
+                overflow: "hidden",
               }}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
             >
-              <img
-                src="drStefan.png"
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              <Box
+                sx={{
+                  width: "100%",
+                  height: "100%",
+                  filter: isHovered ? "blur(7px)" : "blur(0px)",
+                  transition: "filter 0.5s ease",
+                }}
+              >
+                <img
+                  src="drStefan.png"
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                />
+              </Box>
+              <ArrowForward
+                color="primary"
+                className="arrow-icon"
+                sx={{
+                  position: "absolute",
+                  width: "150px",
+                  height: "150px",
+                  top: "50%",
+                  left: "50%",
+                  transform: "translate(-50%, -50%)",
+                  fontSize: "2rem",
+                  opacity: isHovered ? 1 : 0,
+                  transition: "opacity 0.3s ease",
+                }}
               />
             </Box>
-            <ArrowForward
-              color="primary"
-              className="arrow-icon"
-              sx={{
-                position: "absolute",
-                width: "150px",
-                height: "150px",
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                fontSize: "2rem",
-                opacity: isHovered ? 1 : 0,
-                transition: "opacity 0.3s ease",
-              }}
-            />
-          </Box>
-
+          </Link>
           <Paper
             elevation={4}
             sx={{
