@@ -1,7 +1,6 @@
 "use client";
-import { Box, Button, Fade, Grid2, Paper, Typography } from "@mui/material";
+import { Box, Button, Fade, Paper, Typography } from "@mui/material";
 import { Call, LocationOn } from "@mui/icons-material";
-import ServiceItem from "./components/ServiceItem";
 import ServicesGrid from "./components/ServicesGrid";
 import React, { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
@@ -16,19 +15,6 @@ export default function Home() {
   }, []);
   const handleScroll = () => {
     if (targetBoxRef.current) {
-      {
-        <Typography
-          sx={{
-            fontFamily: "fantasy",
-            textAlign: "center",
-            color: "#ffffff",
-            fontWeight: "700",
-            fontSize: "1.25rem",
-          }}
-        >
-          011 35-72-641
-        </Typography>;
-      }
       targetBoxRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
@@ -176,8 +162,8 @@ export default function Home() {
       <Box
         sx={{
           position: "relative",
-          width: "200px", // Set width to 100% of the container's width
-          height: "100px", // Let the height auto-adjust based on the image's aspect ratio
+          width: "200px",
+          height: "100px",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",

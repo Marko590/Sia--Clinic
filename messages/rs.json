@@ -99,5 +99,8 @@
     "address": "Bulevar Oslobođenja 241",
     "emailTitle": "E-mail",
     "email": "office@siadentalclinic.rs"
+  },
+  "PricingPage": {
+    "priceTitle": "Cena (RSD)"
   }
 }

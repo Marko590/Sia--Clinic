@@ -1,0 +1,192 @@
+[
+  {
+    "service": "Prozirni aparatići (Invisalign ili slični)",
+    "price": 150000,
+    "category": "Ortodoncija"
+  },
+  {
+    "service": "Stomatološki aparatići (fiksni, po vilici)",
+    "price": 80000,
+    "category": "Ortodoncija"
+  },
+  {
+    "service": "Stomatološki aparatići (mobilni)",
+    "price": 40000,
+    "category": "Ortodoncija"
+  },
+  {
+    "service": "Ortopedski zadrževači",
+    "price": 10000,
+    "category": "Ortodoncija"
+  },
+  {
+    "service": "Porcelanske fasete (po zubu)",
+    "price": 20000,
+    "category": "Estetska stomatologija"
+  },
+  {
+    "service": "Laser beljenje zuba",
+    "price": 15000,
+    "category": "Estetska stomatologija"
+  },
+  {
+    "service": "Beljenje zuba",
+    "price": 10000,
+    "category": "Estetska stomatologija"
+  },
+  {
+    "service": "Dentalno lepljenje (po zubu)",
+    "price": 7000,
+    "category": "Estetska stomatologija"
+  },
+  {
+    "service": "Pregled i konsultacije",
+    "price": 3000,
+    "category": "Opšta stomatologija"
+  },
+  {
+    "service": "Skidanje kamenca i poliranje",
+    "price": 4000,
+    "category": "Opšta stomatologija"
+  },
+  {
+    "service": "Vađenje zuba",
+    "price": 5000,
+    "category": "Opšta stomatologija"
+  },
+  {
+    "service": "Vađenje umnjaka",
+    "price": 10000,
+    "category": "Opšta stomatologija"
+  },
+  {
+    "service": "Sedacija (azotni oksid)",
+    "price": 5000,
+    "category": "Opšta stomatologija"
+  },
+  {
+    "service": "Noćna zaštita",
+    "price": 8000,
+    "category": "Opšta stomatologija"
+  },
+  {
+    "service": "Lečenje TMJ (temporomandibularni zglob)",
+    "price": 12000,
+    "category": "Opšta stomatologija"
+  },
+  {
+    "service": "Aparat za apneju u snu",
+    "price": 25000,
+    "category": "Opšta stomatologija"
+  },
+  {
+    "service": "Postoperativna nega",
+    "price": 2000,
+    "category": "Opšta stomatologija"
+  },
+  {
+    "service": "Hitni stomatološki pregled",
+    "price": 6000,
+    "category": "Hitna stomatologija"
+  },
+  {
+    "service": "Stomatološki rendgen (po filmu)",
+    "price": 2000,
+    "category": "Dijagnostika"
+  },
+  {
+    "service": "3D stomatološki CT skener",
+    "price": 12000,
+    "category": "Dijagnostika"
+  },
+  {
+    "service": "Biopsija",
+    "price": 7000,
+    "category": "Dijagnostika"
+  },
+  {
+    "service": "Lečenje bolesti desni (čišćenje i planiranje korena)",
+    "price": 10000,
+    "category": "Parodontologija"
+  },
+  {
+    "service": "Fluoridacija",
+    "price": 3000,
+    "category": "Preventivna stomatologija"
+  },
+  {
+    "service": "Dentalna brtva (po zubu)",
+    "price": 1500,
+    "category": "Preventivna stomatologija"
+  },
+  {
+    "service": "Pregled na oralni karcinom",
+    "price": 1500,
+    "category": "Preventivna stomatologija"
+  },
+  {
+    "service": "Dečije čišćenje zuba",
+    "price": 2500,
+    "category": "Dečija stomatologija"
+  },
+  {
+    "service": "Dečija plomba",
+    "price": 5000,
+    "category": "Dečija stomatologija"
+  },
+  {
+    "service": "Održavač prostora (za decu)",
+    "price": 6000,
+    "category": "Dečija stomatologija"
+  },
+  {
+    "service": "Plomba (kompozit)",
+    "price": 6000,
+    "category": "Restaurativna stomatologija"
+  },
+  {
+    "service": "Lečenje korena zuba (endodoncija)",
+    "price": 9000,
+    "category": "Restaurativna stomatologija"
+  },
+  {
+    "service": "Keramička krunica",
+    "price": 30000,
+    "category": "Restaurativna stomatologija"
+  },
+  {
+    "service": "Metal-keramička krunica",
+    "price": 20000,
+    "category": "Restaurativna stomatologija"
+  },
+  {
+    "service": "Kompletna proteza",
+    "price": 70000,
+    "category": "Restaurativna stomatologija"
+  },
+  {
+    "service": "Poluproteza",
+    "price": 50000,
+    "category": "Restaurativna stomatologija"
+  },
+  {
+    "service": "Stomatološki implantat",
+    "price": 80000,
+    "category": "Restaurativna stomatologija"
+  },
+  {
+    "service": "Inleji/Onleji (po zubu)",
+    "price": 15000,
+    "category": "Restaurativna stomatologija"
+  },
+  {
+    "service": "Privremena krunica",
+    "price": 5000,
+    "category": "Restaurativna stomatologija"
+  },
+  {
+    "service": "Popravka proteze",
+    "price": 4000,
+    "category": "Restaurativna stomatologija"
+  }
+]
