@@ -6,6 +6,8 @@ import React, { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import MapPaper from "./components/MapPaper";
 import SectionTitle from "./components/SectionTitle";
+import SvgStar from "./components/SvgStar";
+import SparkleText from "./components/SparkleText";
 
 export default function Home() {
   const targetBoxRef = useRef<HTMLDivElement | null>(null);
@@ -58,18 +60,17 @@ export default function Home() {
           >
             <Fade in={textVisible} timeout={500}>
               <Box sx={{ display: "flex", flexDirection: "column" }}>
-                <Typography
-                  sx={{
-                    fontSize: { xs: "7.5rem", md: "10rem" },
+                <SparkleText
+                  text={t("title")}
+                  style={{
+                    fontSize: "10rem",
                     maxWidth: "560px",
                     fontWeight: "800",
-                    letterSpacing: "0.3em",
+                    letterSpacing: "0.em",
                     fontFamily: "serif",
-                    color: "secondary.main",
                   }}
-                >
-                  {t("title")}
-                </Typography>
+                />
+
                 <Typography
                   variant="h2"
                   sx={{

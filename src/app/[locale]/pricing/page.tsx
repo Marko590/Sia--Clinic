@@ -13,7 +13,6 @@ import {
 import React from "react";
 import DropDownHeader from "../components/DropDownHeader";
 import { PriceItem } from "../lib/types";
-import { useTranslations } from "next-intl";
 import SectionTitle from "../components/SectionTitle";
 import { getTranslations } from "next-intl/server";
 
