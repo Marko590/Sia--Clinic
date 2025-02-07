@@ -59,6 +59,9 @@
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service"
   },
+  "PricingPage": {
+    "title": "Pricing"
+  },
   "About": {
     "staffTitle": "STAFF",
     "staff": {

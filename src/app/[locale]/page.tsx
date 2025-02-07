@@ -5,6 +5,7 @@ import ServicesGrid from "./components/ServicesGrid";
 import React, { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import MapPaper from "./components/MapPaper";
+import SectionTitle from "./components/SectionTitle";
 
 export default function Home() {
   const targetBoxRef = useRef<HTMLDivElement | null>(null);
@@ -137,9 +138,7 @@ export default function Home() {
       <Box
         sx={{
           width: "90%",
-          mx: { xs: 2, md: 4 },
-          my: 8,
-
+          m: { xs: 2, md: 4 },
           borderTop: "4px solid gray",
           borderBottom: "4px solid gray",
           py: 8,
@@ -160,42 +159,7 @@ export default function Home() {
         </Typography>
         <ServicesGrid />
       </Box>
-      <Box
-        ref={targetBoxRef}
-        sx={{
-          position: "relative",
-          width: "200px",
-          height: "100px",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Box
-          sx={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            backgroundImage: "url(/SIA_bg.png)",
-            backgroundPosition: "center",
-            backgroundSize: "contain",
-            backgroundRepeat: "no-repeat",
-            filter: "blur(3px) grayscale(50%)",
-            transition: "filter 0.5s ease",
-            "&:hover": {
-              filter: "blur(0px)",
-            },
-          }}
-        />
-        <Typography
-          color="primary"
-          sx={{ position: "relative", fontSize: "3rem", fontWeight: "400" }}
-        >
-          {t("locationTitle")}
-        </Typography>
-      </Box>
+      <SectionTitle title={t("locationTitle")} sx={{ my: 4 }} />
       <MapPaper sx={{ width: "90%", height: { xs: 600, md: 800 } }} />
     </Box>
   );

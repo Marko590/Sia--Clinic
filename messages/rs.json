@@ -60,6 +60,9 @@
     "privacyPolicy": "Politika privatnosti",
     "termsOfService": "Uslovi korišćenja"
   },
+  "PricingPage": {
+    "title": "Cenovnik"
+  },
   "About": {
     "staffTitle": "OSOBLJE",
     "staff": {

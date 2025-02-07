@@ -5,7 +5,7 @@ const MapPaper = ({
   targetBoxRef,
   sx,
 }: {
-  sx: SxProps<Theme>;
+  sx?: SxProps<Theme>;
   targetBoxRef?: React.RefObject<HTMLDivElement | null>;
 }) => {
   return (

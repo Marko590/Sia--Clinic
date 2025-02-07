@@ -3,6 +3,7 @@ import React from "react";
 import ContactInfo from "../components/ContactInfo";
 import { useTranslations } from "next-intl";
 import MapPaper from "../components/MapPaper";
+import SectionTitle from "../components/SectionTitle";
 
 const Contact = () => {
   const t = useTranslations("ContactPage");
@@ -19,41 +20,7 @@ const Contact = () => {
         gap: 4,
       }}
     >
-      <Box
-        sx={{
-          position: "relative",
-          width: "200px", // Set width to 100% of the container's width
-          height: "100px", // Let the height auto-adjust based on the image's aspect ratio
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Box
-          sx={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            backgroundImage: "url(/SIA_bg.png)",
-            backgroundPosition: "center",
-            backgroundSize: "contain",
-            backgroundRepeat: "no-repeat",
-            filter: "blur(3px) grayscale(50%)",
-            transition: "filter 0.5s ease",
-            "&:hover": {
-              filter: "blur(0px)",
-            },
-          }}
-        />
-        <Typography
-          color="primary"
-          sx={{ position: "relative", fontSize: "3rem", fontWeight: "300" }}
-        >
-          {t("title")}
-        </Typography>
-      </Box>
+      <SectionTitle title={t("title")} />
 
       <Box
         sx={{
