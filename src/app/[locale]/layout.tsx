@@ -5,7 +5,6 @@ import { ThemeProvider } from "@mui/material";
 import theme from "./lib/theme";
 import NavBar from "./components/NavBar";
 import PageWrapper from "./components/PageWrapper";
-import localFont from "next/font/local";
 import inter from "./lib/fonts";
 import Footer from "./components/Footer";
 import { notFound } from "next/navigation";

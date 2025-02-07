@@ -106,7 +106,7 @@ const NavBar = () => {
               }}
             >
               {navLinks.map((link) => (
-                <Link href={link.path}>
+                <Link key={link.key} href={link.path}>
                   <Typography
                     color="white"
                     key={link.key}
@@ -163,7 +163,7 @@ const NavBar = () => {
           }}
         >
           {navLinks.map((link) => (
-            <Link href={link.path}>
+            <Link key={link.key} href={link.path}>
               <MenuItem key={link.key} onClick={handleCloseNavMenu}>
                 <Typography textAlign="center">
                   {tLinks(`links.${link.key}`)}
