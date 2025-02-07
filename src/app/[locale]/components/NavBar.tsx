@@ -85,6 +85,8 @@ const NavBar = () => {
                     display: { xs: "none", md: "inline" },
                     fontWeight: 800,
                     fontSize: "0.5rem",
+                    lineHeight: "1",
+                    textAlign: "center",
                     "&:hover": {
                       color: "secondary.main",
                     },

@@ -7,6 +7,37 @@
     "services": { "title": "Services we offer" },
     "locationTitle": "LOCATION"
   },
+  "ServiceGrid": {
+    "bookButton": "Book",
+    "moreButton": "More",
+    "services": {
+      "dentalExam": {
+        "title": "Dental Exam",
+        "subTitle": "Cleaning, x-rays, & oral exam.",
+        "link": "/service1",
+        "pictureUrl": "/images/service1.jpg"
+      },
+      "orthodontics": {
+        "title": "Orthodontics",
+        "subTitle": "Breezy Braces & Invisalign",
+        "link": "/service2",
+        "pictureUrl": "/images/service2.jpg"
+      },
+      "procedures": {
+        "title": "Procedures",
+        "subTitle": "Fillings, implants, crowns, & more.",
+        "link": "/service3",
+        "pictureUrl": "/images/service3.jpg"
+      },
+      "emergency": {
+        "title": "Emergency",
+        "subTitle": "Urgent appointments for pain, cracked teeth & more.",
+        "link": "/service4",
+        "pictureUrl": "/images/service4.jpg"
+      }
+    }
+  },
+
   "sharedLinks": {
     "links": {
       "services": "Services",

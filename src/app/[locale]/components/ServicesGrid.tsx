@@ -30,11 +30,17 @@ const ServicesGrid = () => {
       pictureUrl: "/images/service3.jpg",
     },
   ];
+  const servicesKeys: string[] = [
+    "dentalExam",
+    "orthodontics",
+    "procedures",
+    "emergency",
+  ];
   return (
     <Grid2 container sx={{ width: "100%", alignItems: "stretch" }} spacing={4}>
-      {services.map((service) => (
+      {servicesKeys.map((serviceKey) => (
         <Grid2 size={{ xs: 12, md: 6, xl: 3 }}>
-          <ServiceItem service={service} />
+          <ServiceItem serviceKey={serviceKey} />
         </Grid2>
       ))}
     </Grid2>
