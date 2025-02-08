@@ -76,9 +76,12 @@ const NavBar = () => {
               >
                 <Image
                   alt="Logo"
+                  width={100}
+                  height={0}
                   src="/SIA_senka.png"
                   style={{
                     width: "100%",
+                    height: "auto",
                   }}
                 />
                 <Typography
@@ -141,8 +144,8 @@ const NavBar = () => {
               <Button
                 startIcon={<Call />}
                 variant="outlined"
+                color="inherit"
                 size="large"
-                color="white"
                 sx={{ display: { xs: "none", md: "flex" }, fontWeight: "300" }}
                 onClick={() => (window.location.href = "tel:+381640766222")}
               >

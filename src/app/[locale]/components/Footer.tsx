@@ -46,7 +46,7 @@ export default function Footer() {
             }}
           >
             {t("contactTitle")}
-            <Link href="mailto:office@siadentalclinic.rs">{t("email")}</Link>
+            <a href="mailto:office@siadentalclinic.rs">{t("email")}</a>
             <Typography sx={{ fontWeight: 200 }}>
               {t("telephoneNumber")}
             </Typography>

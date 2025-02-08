@@ -16,25 +16,19 @@ const SparkleText = ({
     const stars = document.getElementsByClassName("magic-star");
 
     const animate = (star: HTMLElement) => {
-      (star as HTMLElement).style.setProperty(
-        "--star-left",
-        `${rand(-10, 120)}%`,
-      );
-      (star as HTMLElement).style.setProperty(
-        "--star-top",
-        `${rand(-10, 50)}%`,
-      );
-      (star as HTMLElement).style.animation = "none";
+      star.style.setProperty("--star-left", `${rand(-10, 120)}%`);
+      star.style.setProperty("--star-top", `${rand(-10, 50)}%`);
+      star.style.animation = "none";
       const height = (star as HTMLElement).offsetHeight;
       console.log(height);
-      (star as HTMLElement).style.animation = "";
+      star.style.animation = "";
     };
     for (const star of Array.from(stars)) {
       setTimeout(
         () => {
-          animate(star);
+          animate(star as HTMLElement);
           setInterval(() => {
-            animate(star);
+            animate(star as HTMLElement);
           }, 1000);
         },
         index++ * (interval / 3),

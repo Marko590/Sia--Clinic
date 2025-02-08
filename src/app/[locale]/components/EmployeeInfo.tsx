@@ -2,8 +2,8 @@
 import { ArrowForward } from "@mui/icons-material";
 import { Box, Paper, Typography } from "@mui/material";
 import React, { useState } from "react";
-import { Link } from "@/src/i18n/routing";
 import Image from "next/image";
+import { Link } from "@/src/i18n/routing";
 
 const EmployeeInfo = ({
   id,
@@ -49,37 +49,40 @@ const EmployeeInfo = ({
         <Box
           sx={{
             display: "flex",
-            flex: 3,
-            borderRadius: "10px",
             flexDirection: "column",
+            width: "100%",
+            height: "100%",
+            flex: 3,
             gap: 2,
           }}
         >
-          <Link href={`/about-us/${id}`}>
-            <Box
-              sx={{
-                display: "flex",
-                flex: 6,
-                position: "relative",
-                overflow: "hidden",
-              }}
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
-            >
-              <Box
-                sx={{
-                  width: "100%",
-                  height: "100%",
-                  filter: isHovered ? "blur(7px)" : "blur(0px)",
-                  transition: "filter 0.5s ease",
+          {/* Image Container */}
+          <Box
+            sx={{
+              position: "relative", // Positioning needed for the absolute Arrow icon
+              flex: 6,
+              width: "100%",
+              height: "100%",
+              overflow: "hidden",
+              borderRadius: "10px", // Optional: Rounded corners for the image
+            }}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            <Link href={`/about-us/${id}`}>
+              {/* Image Component */}
+              <Image
+                src={image || "/avatar-placeholder.png"}
+                alt={name}
+                layout="fill"
+                style={{
+                  objectFit: "contain", // Ensure the image fits within the container
+                  transition: "filter 0.5s ease", // Smooth transition for the blur effect
+                  filter: isHovered ? "blur(7px)" : "blur(0px)", // Blur effect on hover
                 }}
-              >
-                <Image
-                  alt={name}
-                  src={image || "/default-image.png"}
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                />
-              </Box>
+              />
+
+              {/* Arrow Icon */}
               <ArrowForward
                 color="primary"
                 className="arrow-icon"
@@ -95,20 +98,18 @@ const EmployeeInfo = ({
                   transition: "opacity 0.3s ease",
                 }}
               />
-            </Box>
-          </Link>
-          <Paper
-            elevation={4}
-            sx={{
-              display: "flex",
-              flex: 1,
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
+            </Link>
+          </Box>
+
+          {/* Name */}
+          <Paper elevation={5} sx={{ flex: 1, width: "100%", height: "100%" }}>
             <Typography
               color="primary"
-              sx={{ fontWeight: "500", fontSize: "1.5rem" }}
+              sx={{
+                textAlign: "center",
+                fontWeight: "600",
+                fontSize: "1.5rem",
+              }}
             >
               {name}
             </Typography>
@@ -118,5 +119,4 @@ const EmployeeInfo = ({
     </Paper>
   );
 };
-
 export default EmployeeInfo;

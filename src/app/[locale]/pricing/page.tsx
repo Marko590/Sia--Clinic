@@ -1,3 +1,4 @@
+"use client";
 import { ArrowDownward } from "@mui/icons-material";
 import {
   Accordion,
@@ -10,20 +11,29 @@ import {
   TableContainer,
   TableRow,
 } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import DropDownHeader from "../components/DropDownHeader";
 import { PriceItem } from "../lib/types";
 import SectionTitle from "../components/SectionTitle";
-
+import { useLocale } from "next-intl";
 async function getPriceList(locale: string) {
   const res = await fetch(`http://localhost:3000/priceList_${locale}.json`);
   return res.json();
 }
 
-export default async function Page({ params: { locale } }) {
+export default function Page() {
+  const locale = useLocale();
   const servicesByCategory: Record<string, PriceItem[]> = {};
-  const priceList = await getPriceList(locale);
 
+  const [priceList, setPriceList] = useState<PriceItem[]>([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      const data = await getPriceList(locale);
+      setPriceList(data);
+    }
+    fetchData();
+  }, [locale]);
   priceList.forEach((service: PriceItem) => {
     if (!servicesByCategory[service.category]) {
       servicesByCategory[service.category] = [];

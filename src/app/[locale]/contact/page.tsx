@@ -28,9 +28,8 @@ const Contact = () => {
           flexDirection: { xs: "column", md: "row" },
           alignItems: "stretch",
           justifyContent: "center",
-          p: 4,
-          width: "100%",
-          gap: 4,
+          width: "90%",
+          gap: 8,
         }}
       >
         <Paper
@@ -73,7 +72,7 @@ const Contact = () => {
           </Box>
         </Paper>
 
-        <MapPaper sx={{ flex: 1, minHeight: 560 }} />
+        <MapPaper sx={{ flex: 1 }} />
       </Box>
     </Box>
   );
