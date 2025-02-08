@@ -17,7 +17,7 @@ import { PriceItem } from "../lib/types";
 import SectionTitle from "../components/SectionTitle";
 import { useLocale } from "next-intl";
 async function getPriceList(locale: string) {
-  const res = await fetch(`http://localhost:3000/priceList_${locale}.json`);
+  const res = await fetch(`/priceList_${locale}.json`);
   return res.json();
 }
 
