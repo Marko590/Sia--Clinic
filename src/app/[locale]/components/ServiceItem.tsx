@@ -50,8 +50,8 @@ const ServiceItem = ({ serviceKey }: { serviceKey: string }) => {
           <Button
             variant="contained"
             sx={{
+              px: 8,
               py: 2,
-              px: 4,
               fontWeight: 700,
               letterSpacing: "0.12em",
               minWidth: "30%",

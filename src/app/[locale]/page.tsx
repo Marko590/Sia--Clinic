@@ -160,7 +160,10 @@ export default function Home() {
         <ServicesGrid />
       </Box>
       <SectionTitle title={t("locationTitle")} sx={{ my: 4 }} />
-      <MapPaper sx={{ width: "90%", height: { xs: 600, md: 800 } }} />
+      <MapPaper
+        targetBoxRef={targetBoxRef}
+        sx={{ width: "90%", height: { xs: 600, md: 800 } }}
+      />
     </Box>
   );
 }

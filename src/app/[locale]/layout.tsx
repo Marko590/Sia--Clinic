@@ -11,6 +11,7 @@ import { routing } from "@/src/i18n/routing";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import { ReactNode } from "react";
+import LanguageSwitch from "./components/LanguageSwitch";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -43,6 +44,8 @@ export default async function RootLayout({ children, params }: Props) {
             <NavBar />
             <PageWrapper>{children}</PageWrapper>
             <Footer />
+
+            <LanguageSwitch />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
