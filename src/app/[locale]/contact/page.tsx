@@ -26,7 +26,6 @@ const Contact = () => {
         sx={{
           display: "flex",
           flexDirection: { xs: "column", md: "row" },
-          alignItems: "stretch",
           justifyContent: "center",
           width: "90%",
           gap: 8,
@@ -55,7 +54,7 @@ const Contact = () => {
               color="primary"
               sx={{
                 textAlign: "center",
-                fontSize: "2.5rem",
+                fontSize: { xs: "1.75rem", md: "2.5rem" },
                 fontWeight: "300",
               }}
             >
@@ -72,7 +71,12 @@ const Contact = () => {
           </Box>
         </Paper>
 
-        <MapPaper sx={{ flex: 1 }} />
+        <MapPaper
+          sx={{
+            flex: { md: 1 },
+            height: { xs: "600px", md: "700px" }, // Explicit height for mobile
+          }}
+        />
       </Box>
     </Box>
   );
