@@ -8,19 +8,8 @@ import SectionTitle from "../components/SectionTitle";
 const Contact = () => {
   const t = useTranslations("ContactPage");
   return (
-    <Box
-      sx={{
-        mt: 4,
-        width: "100%",
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        gap: 4,
-      }}
-    >
-      <SectionTitle title={t("title")} />
+    <>
+      <SectionTitle title={t("title")} sx={{ mt: 4 }} />
 
       <Box
         sx={{
@@ -78,7 +67,7 @@ const Contact = () => {
           }}
         />
       </Box>
-    </Box>
+    </>
   );
 };
 
