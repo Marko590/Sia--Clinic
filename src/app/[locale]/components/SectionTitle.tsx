@@ -40,7 +40,7 @@ const SectionTitle = ({
       />
       <Typography
         color="primary"
-        sx={{ position: "relative", fontSize: "3rem", fontWeight: "300" }}
+        sx={{ position: "relative", fontSize: "3rem", fontWeight: "500" }}
       >
         {title}
       </Typography>
