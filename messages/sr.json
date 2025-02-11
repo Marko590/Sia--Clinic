@@ -49,19 +49,18 @@
   },
   "NavBar": {
     "title": "SIA DENTAL CLINIC",
-    "telephoneNumber": "+381640766222"
+    "telephoneNumber": "+381640766222",
+    "pricingTitle": "CENOVNIK"
   },
   "Footer": {
     "contactTitle": "Kontakt:",
     "telephoneNumber": "Telefon: 064-07-66-222",
     "email": "office@siadentalclinic.rs",
     "address": "Adresa: Bulevar Oslobođenja 241",
+    "linksTitle": "Stranice:",
     "socialsTitle": "Društvene mreže:",
     "privacyPolicy": "Politika privatnosti",
     "termsOfService": "Uslovi korišćenja"
-  },
-  "PricingPage": {
-    "title": "CENOVNIK"
   },
   "About": {
     "staffTitle": "OSOBLJE",

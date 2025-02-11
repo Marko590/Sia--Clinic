@@ -15,7 +15,7 @@ import React, { useEffect, useState } from "react";
 import DropDownHeader from "../components/DropDownHeader";
 import { PriceItem } from "../lib/types";
 import SectionTitle from "../components/SectionTitle";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 async function getPriceList(locale: string) {
   const res = await fetch(`/priceList_${locale}.json`);
   return res.json();
@@ -26,6 +26,7 @@ export default function Page() {
   const servicesByCategory: Record<string, PriceItem[]> = {};
 
   const [priceList, setPriceList] = useState<PriceItem[]>([]);
+  const t = useTranslations("NavBar");
 
   useEffect(() => {
     async function fetchData() {
@@ -43,7 +44,7 @@ export default function Page() {
 
   return (
     <>
-      <SectionTitle title={"Pricing"} sx={{ mt: 4 }} />
+      <SectionTitle title={t("pricingTitle")} sx={{ mt: 4 }} />
 
       <Box
         sx={{

@@ -63,7 +63,7 @@ const Contact = () => {
         <MapPaper
           sx={{
             flex: { md: 1 },
-            height: { xs: "600px", md: "700px" }, // Explicit height for mobile
+            height: "620px",
           }}
         />
       </Box>
