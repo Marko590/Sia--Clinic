@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import SvgStar from "./SvgStar";
+import SvgStarMultiple from "./SvgStarMultiple";
 
 const SparkleText = ({
   text,
@@ -39,8 +40,10 @@ const SparkleText = ({
   return (
     <h1 style={style}>
       <span className="magic">
-        <SvgStar /> <SvgStar />
-        <SvgStar /> <span className="magic-text">{text}</span>
+        <SvgStar />
+        <SvgStar />
+        <SvgStar />
+        <span className="magic-text">{text}</span>
       </span>{" "}
     </h1>
   );

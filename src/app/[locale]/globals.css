@@ -53,7 +53,7 @@ h1 > .magic > .magic-text {
 }
 .magic-star {
   --size: clamp(15px, 1vw, 25px);
-  animation: scale 700ms ease forwards;
+  animation: scale 1200ms ease forwards;
   display: block;
   color: red;
   height: var(--size);
@@ -63,7 +63,7 @@ h1 > .magic > .magic-text {
   width: var(--size);
 }
 .magic-star > svg {
-  animation: rotate 1000ms linear infinite;
+  animation: rotate 1500ms linear infinite;
   display: block;
   opacity: 0.85;
 }

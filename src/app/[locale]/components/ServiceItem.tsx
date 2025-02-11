@@ -53,9 +53,9 @@ const ServiceItem = ({ serviceKey }: { serviceKey: string }) => {
               px: 8,
               py: 2,
               fontWeight: 700,
-              letterSpacing: "0.12em",
+              letterSpacing: "0.10em",
               minWidth: "30%",
-              width: "40%",
+              width: "45%",
             }}
           >
             {t("bookButton")}
@@ -65,12 +65,12 @@ const ServiceItem = ({ serviceKey }: { serviceKey: string }) => {
             sx={{
               border: "1px solid",
               py: 2,
-              px: 4,
+              px: 8,
               fontWeight: 700,
               letterSpacing: "0.12em",
               display: { xs: "flex", md: "none" },
               minWidth: "30%",
-              width: "40%",
+              width: "45%",
             }}
           >
             {t("moreButton")}
