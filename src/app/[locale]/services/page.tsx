@@ -4,7 +4,6 @@ import HoverCard from "../components/HoverCard";
 import { servicesKeys } from "../lib/data";
 import SectionTitle from "../components/SectionTitle";
 
-const text = ["first", "second"];
 const page = () => {
   return (
     <>
@@ -19,7 +18,7 @@ const page = () => {
         }}
       >
         {servicesKeys.map((service, idx) => (
-          <HoverCard id={idx} serviceKey={service} />
+          <HoverCard key={idx} id={idx} serviceKey={service} />
         ))}
       </Box>
     </>

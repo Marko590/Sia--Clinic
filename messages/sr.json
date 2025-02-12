@@ -15,24 +15,28 @@
       "dentalExam": {
         "title": "Stomatološki pregled",
         "subTitle": "Čišćenje, rendgenski snimci, & oralni pregled.",
+        "description": "Naš sveobuhvatni stomatološki pregled uključuje detaljnu procenu vaših zuba, desni i opšteg oralnog zdravlja. Pružamo profesionalno čišćenje za uklanjanje plaka i kamenca, radimo detaljne rendgenske snimke kako bismo otkrili bilo kakve skrivene probleme i obavljamo temeljni oralni pregled radi rane detekcije karijesa, bolesti desni i drugih stanja. Redovni pregledi pomažu u održavanju zdravog i blistavog osmeha i sprečavaju buduće stomatološke probleme.",
         "link": "/service1",
         "pictureUrl": "/images/service1.jpg"
       },
       "orthodontics": {
         "title": "Ortodoncija",
         "subTitle": "Proteze i Invisalign",
+        "description": "Postignite pravilan i samouveren osmeh uz naše ortodontske tretmane. Nudimo klasične fiksne proteze za efikasno ispravljanje zuba, kao i Invisalign kao diskretnu i udobnu alternativu. Naši personalizovani ortodontski planovi pomažu u ispravljanju nepravilnosti u zagrižaju, zbijenih ili razmaknutih zuba i drugih problema, poboljšavajući funkcionalnost i estetiku osmeha. Bez obzira na godine, imamo rešenja prilagođena vašim potrebama.",
         "link": "/service2",
         "pictureUrl": "/images/service2.jpg"
       },
       "procedures": {
         "title": "Tretmani",
         "subTitle": "Plombe, implantati, krunice, & još mnogo toga.",
+        "description": "Nudimo širok spektar restaurativnih i estetskih stomatoloških tretmana za poboljšanje vašeg osmeha i očuvanje oralnog zdravlja. Od jednostavnih plombi i lečenja kanala korena do ugradnje implantata i postavljanja porcelanskih krunica, naš stručni tim koristi napredne tehnike i visokokvalitetne materijale. Bilo da su vam potrebne manje popravke ili potpuna rekonstrukcija, pružamo sigurne, dugotrajne i prilagođene tretmane.",
         "link": "/service3",
         "pictureUrl": "/images/service3.jpg"
       },
       "emergency": {
         "title": "Hitni slučajevi",
         "subTitle": "Hitni pregledi zbog bola, slomljenih zuba & još mnogo toga.",
+        "description": "Stomatološke hitne situacije se mogu desiti u bilo kom trenutku, a mi smo tu da vam pružimo brzu i efikasnu pomoć. Bez obzira na to da li imate jak zubobolju, slomljen ili izbijen zub, otok ili bilo koji drugi hitan stomatološki problem, naš tim će vas primiti što pre. Prioritet dajemo hitnim slučajevima kako bismo brzo ublažili bol, dijagnostikovali problem i obezbedili odgovarajući tretman za što brži oporavak.",
         "link": "/service4",
         "pictureUrl": "/images/service4.jpg"
       }
