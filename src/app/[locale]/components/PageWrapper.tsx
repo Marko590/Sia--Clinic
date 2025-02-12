@@ -14,6 +14,7 @@ const PageWrapper = ({ children }: { children: React.ReactNode }) => {
       <Container
         maxWidth={false}
         sx={{
+          flex: 1,
           py: { xs: "68px", md: "100px" },
           display: "flex",
           flexDirection: "column",
