@@ -76,7 +76,7 @@ export default function Page() {
             >
               <DropDownHeader category={category} />
             </AccordionSummary>
-            <AccordionDetails sx={{ pt: 0, px: { xs: 2, md: 6 } }}>
+            <AccordionDetails sx={{ px: { xs: 2, md: 6 } }}>
               <TableContainer>
                 <Table>
                   <TableBody>

@@ -1,4 +1,4 @@
-import { Box, Grid2 } from "@mui/material";
+import { Grid2 } from "@mui/material";
 import React from "react";
 import EmployeeInfo from "../components/EmployeeInfo";
 import { useTranslations } from "next-intl";

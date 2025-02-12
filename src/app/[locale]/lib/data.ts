@@ -1,5 +1,11 @@
 import { EmployeePageInfo } from "./types";
 
+export const servicesKeys: string[] = [
+  "dentalExam",
+  "orthodontics",
+  "procedures",
+  "emergency",
+];
 export const employeeInfo: Array<EmployeePageInfo> = [
   {
     id: "stefan-raicevic",

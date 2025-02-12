@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import SvgStar from "./SvgStar";
-import SvgStarMultiple from "./SvgStarMultiple";
 
 const SparkleText = ({
   text,
