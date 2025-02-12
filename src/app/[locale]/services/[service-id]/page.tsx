@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useParams } from "next/navigation";
 import React from "react";
 
-const page = () => {
+const Page = () => {
   const serviceId = useParams()["service-id"];
   const t = useTranslations("ServiceGrid");
   console.log(serviceId);
@@ -48,6 +48,7 @@ const page = () => {
             fontSize: { xs: "1.25rem", md: "1.5rem" },
           }}
         >
+          {" "}
           {t(`services.${serviceId}.description`)}
         </Typography>
       </Box>
@@ -71,4 +72,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
