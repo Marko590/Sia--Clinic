@@ -1,4 +1,4 @@
-import { Box, Grid2 } from "@mui/material";
+import { Grid2 } from "@mui/material";
 import React from "react";
 import EmployeeInfo from "../components/EmployeeInfo";
 import { useTranslations } from "next-intl";
@@ -8,22 +8,13 @@ const Page = () => {
   const t = useTranslations("About");
   const staffIds = ["stefan-raicevic", "andrija-banovic"];
   return (
-    <Box
-      sx={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        flexDirection: "column",
-        gap: 8,
-        p: { xs: 2, md: 8 },
-      }}
-    >
-      <SectionTitle title={t("staffTitle")} />
+    <>
+      <SectionTitle title={t("staffTitle")} sx={{ mt: 4 }} />
 
       <Grid2
         container
         spacing={8}
-        sx={{ alignItems: "stretch", width: "100%" }}
+        sx={{ alignItems: "stretch", width: "100%", px: { xs: 2, md: 8 } }}
       >
         {staffIds.map((id) => (
           <Grid2 key={id} size={{ xs: 12, lg: 6 }}>
@@ -35,7 +26,7 @@ const Page = () => {
           </Grid2>
         ))}
       </Grid2>
-    </Box>
+    </>
   );
 };
 

@@ -10,15 +10,12 @@ const ContactInfo = ({
 }) => {
   return (
     <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
-      <Typography sx={{ fontFamily: "fantasy", textAlign: "center" }}>
-        {title}
-      </Typography>
+      <Typography sx={{ textAlign: "center" }}>{title}</Typography>
       {Array.isArray(subtitle) ? (
         subtitle.map((item, index) => (
           <Typography
             key={index}
             sx={{
-              fontFamily: "fantasy",
               textAlign: "center",
               color: "text.secondary",
               fontWeight: "700",
@@ -31,7 +28,6 @@ const ContactInfo = ({
       ) : (
         <Typography
           sx={{
-            fontFamily: "fantasy",
             textAlign: "center",
             color: "text.secondary",
             fontWeight: "700",

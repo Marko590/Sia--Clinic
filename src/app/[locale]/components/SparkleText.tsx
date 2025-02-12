@@ -39,8 +39,10 @@ const SparkleText = ({
   return (
     <h1 style={style}>
       <span className="magic">
-        <SvgStar /> <SvgStar />
-        <SvgStar /> <span className="magic-text">{text}</span>
+        <SvgStar />
+        <SvgStar />
+        <SvgStar />
+        <span className="magic-text">{text}</span>
       </span>{" "}
     </h1>
   );

@@ -3,7 +3,7 @@
     "title": "SIA",
     "subtitle": "Najbolji zubari i bez osuđivanja, ikada.",
     "locationButton": "LOKACIJA",
-    "callNowButton": "POZOVITE SAD",
+    "callNowButton": "POZOVITE",
     "services": { "title": "Usluge koje pružamo" },
     "locationTitle": "LOKACIJA"
   },
@@ -49,19 +49,18 @@
   },
   "NavBar": {
     "title": "SIA DENTAL CLINIC",
-    "telephoneNumber": "+381640766222"
+    "telephoneNumber": "+381640766222",
+    "pricingTitle": "CENOVNIK"
   },
   "Footer": {
     "contactTitle": "Kontakt:",
     "telephoneNumber": "Telefon: 064-07-66-222",
     "email": "office@siadentalclinic.rs",
     "address": "Adresa: Bulevar Oslobođenja 241",
+    "linksTitle": "Stranice:",
     "socialsTitle": "Društvene mreže:",
     "privacyPolicy": "Politika privatnosti",
     "termsOfService": "Uslovi korišćenja"
-  },
-  "PricingPage": {
-    "title": "Cenovnik"
   },
   "About": {
     "staffTitle": "OSOBLJE",
@@ -91,7 +90,7 @@
     }
   },
   "ContactPage": {
-    "title": "Kontakt",
+    "title": "KONTAKT",
     "appointmentTitle": "Zakazivanje pregleda",
     "workHoursTitle": "Radno vreme",
     "workHours": "Pon-Pet 11-19h",

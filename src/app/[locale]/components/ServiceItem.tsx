@@ -1,27 +1,41 @@
 import React from "react";
-import { Box, Paper, Typography, Button } from "@mui/material";
+import { Box, Paper, Typography, Button, Theme, SxProps } from "@mui/material";
 import { useTranslations } from "next-intl";
-const ServiceItem = ({ serviceKey }: { serviceKey: string }) => {
+import { useRouter } from "@/src/i18n/routing";
+const ServiceItem = ({
+  serviceKey,
+  sx,
+}: {
+  serviceKey: string;
+  sx?: SxProps<Theme>;
+}) => {
   const t = useTranslations("ServiceGrid");
+  const router = useRouter();
   return (
     <Paper
       elevation={8}
-      sx={{ p: 4, backgroundColor: "background.paper", height: "100%" }}
-      square
+      sx={{
+        p: 4,
+        pb: { xs: 6, md: 4 },
+        backgroundColor: "background.paper",
+        width: "100%",
+        height: "100%",
+        ...sx,
+      }}
     >
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
           gap: 4,
-          height: "100%", // Ensures full height usage
+          height: "100%",
         }}
       >
         <Typography
           variant="h1"
           sx={{
             color: "secondary.main",
-            fontSize: { xs: "1.5rem", md: "2rem" },
+            fontSize: { xs: "2rem", md: "2.25rem" },
             fontWeight: "400",
           }}
         >
@@ -31,8 +45,8 @@ const ServiceItem = ({ serviceKey }: { serviceKey: string }) => {
         <Typography
           variant="h2"
           sx={{
-            fontSize: { xs: "1.25rem", md: "1.5rem" },
-            width: "80%",
+            fontSize: "1.5rem",
+            width: "100%",
           }}
         >
           {t(`services.${serviceKey}.subTitle`)}
@@ -41,10 +55,10 @@ const ServiceItem = ({ serviceKey }: { serviceKey: string }) => {
         {/* Buttons always at the bottom */}
         <Box
           sx={{
-            width: "100%",
             display: "flex",
             gap: 2,
             mt: "auto",
+            justifyContent: { xs: "center", md: "end" },
           }}
         >
           <Button
@@ -53,9 +67,12 @@ const ServiceItem = ({ serviceKey }: { serviceKey: string }) => {
               px: 8,
               py: 2,
               fontWeight: 700,
-              letterSpacing: "0.12em",
+              letterSpacing: "0.10em",
               minWidth: "30%",
-              width: "40%",
+              width: "45%",
+            }}
+            onClick={() => {
+              router.replace(`/services/${serviceKey}`);
             }}
           >
             {t("bookButton")}
@@ -65,12 +82,12 @@ const ServiceItem = ({ serviceKey }: { serviceKey: string }) => {
             sx={{
               border: "1px solid",
               py: 2,
-              px: 4,
+              px: 8,
               fontWeight: 700,
               letterSpacing: "0.12em",
               display: { xs: "flex", md: "none" },
               minWidth: "30%",
-              width: "40%",
+              width: "45%",
             }}
           >
             {t("moreButton")}

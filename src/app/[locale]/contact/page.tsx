@@ -8,25 +8,13 @@ import SectionTitle from "../components/SectionTitle";
 const Contact = () => {
   const t = useTranslations("ContactPage");
   return (
-    <Box
-      sx={{
-        mt: 4,
-        width: "100%",
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        gap: 4,
-      }}
-    >
-      <SectionTitle title={t("title")} />
+    <>
+      <SectionTitle title={t("title")} sx={{ mt: 4 }} />
 
       <Box
         sx={{
           display: "flex",
           flexDirection: { xs: "column", md: "row" },
-          alignItems: "stretch",
           justifyContent: "center",
           width: "90%",
           gap: 8,
@@ -55,7 +43,7 @@ const Contact = () => {
               color="primary"
               sx={{
                 textAlign: "center",
-                fontSize: "2.5rem",
+                fontSize: { xs: "1.75rem", md: "2.5rem" },
                 fontWeight: "300",
               }}
             >
@@ -72,9 +60,14 @@ const Contact = () => {
           </Box>
         </Paper>
 
-        <MapPaper sx={{ flex: 1 }} />
+        <MapPaper
+          sx={{
+            flex: { md: 1 },
+            height: "620px",
+          }}
+        />
       </Box>
-    </Box>
+    </>
   );
 };
 

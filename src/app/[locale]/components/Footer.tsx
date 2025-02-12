@@ -45,12 +45,21 @@ export default function Footer() {
               gap: { xs: 1, md: 2 },
             }}
           >
-            {t("contactTitle")}
-            <a href="mailto:office@siadentalclinic.rs">{t("email")}</a>
-            <Typography sx={{ fontWeight: 200 }}>
+            <Typography sx={{ fontWeight: "400" }}>
+              {t("contactTitle")}
+            </Typography>
+            <Typography
+              sx={{
+                fontWeight: "600",
+                "&:hover": { textDecoration: "underline" },
+              }}
+            >
+              <a href="mailto:office@siadentalclinic.rs">{t("email")}</a>
+            </Typography>
+            <Typography sx={{ fontWeight: 600 }}>
               {t("telephoneNumber")}
             </Typography>
-            <Typography sx={{ fontWeight: 200 }}>{t("address")}</Typography>
+            <Typography sx={{ fontWeight: 600 }}>{t("address")}</Typography>
           </Box>
           <Box
             sx={{
@@ -61,10 +70,19 @@ export default function Footer() {
               gap: 2,
             }}
           >
-            Links:
+            <Typography sx={{ fontWeight: "400" }}>
+              {t("linksTitle")}
+            </Typography>
             {navLinks.map((link) => (
               <Link key={link.key} href={link.path}>
-                {tLinks(`links.${link.key}`)}
+                <Typography
+                  sx={{
+                    fontWeight: "600",
+                    "&:hover": { textDecoration: "underline" },
+                  }}
+                >
+                  {tLinks(`links.${link.key}`)}
+                </Typography>
               </Link>
             ))}
           </Box>
@@ -78,19 +96,8 @@ export default function Footer() {
               gap: 2,
             }}
           >
-            {t("socialsTitle")}
-            <Typography
-              color="primary"
-              component="a"
-              href="https://www.instagram.com/sia_dental_clinic/"
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                fontWeight: "600",
-                "&:hover": { textDecoration: "underline" },
-              }}
-            >
-              <Instagram /> : sia_dental_clinic
+            <Typography sx={{ fontWeight: "400" }}>
+              {t("socialsTitle")}
             </Typography>
             <Typography
               color="primary"
@@ -119,14 +126,17 @@ export default function Footer() {
             © {new Date().getFullYear()} SIA Dental Clinic
           </Typography>
 
-          <Box sx={{ display: "flex", justifyContent: "center" }}>
-            <Link href="/privacy-policy" color="secondary">
-              {t("privacyPolicy")}
-            </Link>
-
-            <Link href="/terms" color="secondary">
-              {t("termsOfService")}
-            </Link>
+          <Box sx={{ display: "flex", justifyContent: "center", gap: 2 }}>
+            <Typography sx={{ "&:hover": { textDecoration: "underline" } }}>
+              <Link href="/privacy-policy" color="secondary">
+                {t("privacyPolicy")}
+              </Link>
+            </Typography>
+            <Typography sx={{ "&:hover": { textDecoration: "underline" } }}>
+              <Link href="/terms" color="secondary">
+                {t("termsOfService")}
+              </Link>
+            </Typography>
           </Box>
         </Box>
       </Container>

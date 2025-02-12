@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 import MapPaper from "./components/MapPaper";
 import SectionTitle from "./components/SectionTitle";
 import SparkleText from "./components/SparkleText";
+import Carousel from "./components/Carousel";
 
 export default function Home() {
   const targetBoxRef = useRef<HTMLDivElement | null>(null);
@@ -22,15 +23,7 @@ export default function Home() {
     }
   };
   return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        width: "100%",
-        alignItems: "center",
-        height: "100%",
-      }}
-    >
+    <>
       <Box
         sx={{
           display: "flex",
@@ -134,16 +127,16 @@ export default function Home() {
           }}
         ></Box>
       </Box>
-
       <Box
         sx={{
           width: "90%",
-          m: { xs: 2, md: 4 },
           borderTop: "4px solid gray",
           borderBottom: "4px solid gray",
-          py: 8,
+          py: 4,
           display: "flex",
           flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
           gap: 4,
         }}
       >
@@ -152,18 +145,32 @@ export default function Home() {
           color="primary"
           sx={{
             fontWeight: 700,
-            fontSize: { xs: "2.5rem", md: "3rem" },
+            fontSize: { xs: "2.25rem", md: "3rem" },
+            textAlign: "center",
           }}
         >
           {t("services.title")}
         </Typography>
-        <ServicesGrid />
+
+        <Box
+          sx={{
+            display: { xs: "flex", md: "none" },
+            justifyContent: "center",
+            alignItems: "center",
+            width: "100%",
+          }}
+        >
+          <Carousel />
+        </Box>
+        <Box sx={{ display: { xs: "none", md: "block" } }}>
+          <ServicesGrid />
+        </Box>
       </Box>
-      <SectionTitle title={t("locationTitle")} sx={{ my: 4 }} />
+      <SectionTitle title={t("locationTitle")} />
       <MapPaper
         targetBoxRef={targetBoxRef}
         sx={{ width: "90%", height: { xs: 600, md: 800 } }}
       />
-    </Box>
+    </>
   );
 }
