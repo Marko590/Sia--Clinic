@@ -38,6 +38,12 @@ export default async function RootLayout({ children, params }: Props) {
   const messages = await getMessages();
   return (
     <html lang={locale}>
+      <head>
+        <meta
+          name="google-site-verification"
+          content="__1DEFTbFe9WA6aqkPBWA0zbUr99X7m8Z1evG4LpIeM"
+        />
+      </head>
       <body className={`${inter.variable}`}>
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider theme={theme}>
