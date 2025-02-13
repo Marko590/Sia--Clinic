@@ -14,24 +14,28 @@
       "dentalExam": {
         "title": "Dental Exam",
         "subTitle": "Cleaning, x-rays, & oral exam.",
+        "description": "Our comprehensive dental exam includes a thorough assessment of your teeth, gums, and overall oral health. We provide professional cleaning to remove plaque and tartar, take detailed x-rays to detect any underlying issues, and conduct an in-depth oral examination to ensure early detection of cavities, gum disease, and other concerns. Regular exams help maintain a healthy, bright smile and prevent future dental problems.",
         "link": "/service1",
         "pictureUrl": "/images/service1.jpg"
       },
       "orthodontics": {
         "title": "Orthodontics",
         "subTitle": "Breezy Braces & Invisalign",
+        "description": "Achieve a straight, confident smile with our orthodontic treatments. We offer traditional braces for effective teeth alignment as well as Invisalign for a discreet, comfortable alternative. Our personalized orthodontic plans help correct misalignment, bite issues, and crowding while improving oral function. Whether you’re a child, teen, or adult, we provide solutions tailored to your needs for a healthier, more beautiful smile.",
         "link": "/service2",
         "pictureUrl": "/images/service2.jpg"
       },
       "procedures": {
         "title": "Procedures",
         "subTitle": "Fillings, implants, crowns, & more.",
+        "description": "We offer a full range of restorative and cosmetic dental procedures to enhance your smile and maintain oral health. From cavity fillings and root canals to dental implants and porcelain crowns, our expert team uses advanced techniques and high-quality materials to restore functionality and aesthetics. Whether you need minor repairs or full-mouth restoration, we ensure comfortable, long-lasting results tailored to your needs.",
         "link": "/service3",
         "pictureUrl": "/images/service3.jpg"
       },
       "emergency": {
         "title": "Emergency",
         "subTitle": "Urgent appointments for pain, cracked teeth & more.",
+        "description": "Dental emergencies can happen at any time, and we’re here to provide immediate care when you need it most. Whether you're experiencing severe tooth pain, a broken or knocked-out tooth, swelling, or any other urgent dental issue, our team is ready to assist you. We prioritize emergency cases to offer quick relief, diagnose the problem, and provide effective treatment to restore your oral health as soon as possible.",
         "link": "/service4",
         "pictureUrl": "/images/service4.jpg"
       }
