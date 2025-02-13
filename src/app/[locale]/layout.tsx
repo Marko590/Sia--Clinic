@@ -13,6 +13,10 @@ import { NextIntlClientProvider } from "next-intl";
 import { ReactNode } from "react";
 import LanguageSwitch from "./components/LanguageSwitch";
 
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
