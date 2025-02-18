@@ -1,14 +1,17 @@
-"use client";
 import { Box, Typography } from "@mui/material";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { useParams } from "next/navigation";
-import React from "react";
+import React, { use } from "react";
+import { servicesKeys } from "../../lib/data";
 
-const Page = () => {
-  const serviceId = useParams()["service-id"];
+export function generateStaticParams() {
+  return servicesKeys.map((serviceKey) => ({ "service-id": serviceKey }));
+}
+type Props = { params: Promise<{ "service-id": string }> };
+const Page = ({ params }: Props) => {
+  const param = use(params);
+  const serviceId = param["service-id"];
   const t = useTranslations("ServiceGrid");
-  console.log(serviceId);
   return (
     <Box
       sx={{
@@ -48,7 +51,6 @@ const Page = () => {
             fontSize: { xs: "1.25rem", md: "1.5rem" },
           }}
         >
-          {" "}
           {t(`services.${serviceId}.description`)}
         </Typography>
       </Box>

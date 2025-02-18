@@ -1,12 +1,16 @@
-"use client";
 import Image from "next/image";
 import { Box, Typography } from "@mui/material";
-import { useParams } from "next/navigation";
-import React from "react";
+import React, { use } from "react";
 import { useTranslations } from "next-intl";
+import { employeeInfo } from "../../lib/data";
 
-const Page = () => {
-  const { id } = useParams();
+export function generateStaticParams() {
+  return employeeInfo.map((employee) => ({ id: employee.id }));
+}
+type Props = { params: Promise<{ id: string }> };
+const Page = ({ params }: Props) => {
+  const param = use(params);
+  const id = param["id"];
   const t = useTranslations("DoctorInfoPage");
 
   return (
