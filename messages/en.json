@@ -11,7 +11,7 @@
     "bookButton": "Book",
     "moreButton": "More",
     "services": {
-      "dentalExam": {
+      "dental-exam": {
         "title": "Dental Exam",
         "subTitle": "Cleaning, x-rays, & oral exam.",
         "description": "Our comprehensive dental exam includes a thorough assessment of your teeth, gums, and overall oral health. We provide professional cleaning to remove plaque and tartar, take detailed x-rays to detect any underlying issues, and conduct an in-depth oral examination to ensure early detection of cavities, gum disease, and other concerns. Regular exams help maintain a healthy, bright smile and prevent future dental problems.",
@@ -224,6 +224,86 @@
           "keywords": "Dr. Andrija Banović, dentist, general dentistry, cosmetic dentistry, dental care, preventive care, restorative dentistry, smile makeover, dental implants, dental fillings, root canal therapy, Belgrade dentist, Voždovac dentist, experienced dentist, dental specialist, professional dental care"
         }
       }
+    },
+    "servicesCards": {
+      "dental-exam": {
+        "title": "Dental Exam | SIA Dental Clinic",
+        "description": "Our comprehensive dental exam includes a thorough assessment of your teeth, gums, and overall oral health. We provide professional cleaning to remove plaque and tartar, take detailed x-rays to detect any underlying issues, and conduct an in-depth oral examination to ensure early detection of cavities, gum disease, and other concerns. Regular exams help maintain a healthy, bright smile and prevent future dental problems.",
+        "keywords": "dental exam, cleaning, x-rays, oral exam, plaque removal, tartar removal, cavity detection, gum disease, oral health, teeth checkup, dental hygiene",
+        "openGraph": {
+          "title": "Dental Exam | SIA Dental Clinic",
+          "description": "Our comprehensive dental exam includes a thorough assessment of your teeth, gums, and overall oral health.",
+          "type": "website",
+          "url": "https://siadentalclinic.com/sr/services/dental-exam"
+        },
+        "twitter": {
+          "card": "summary_large_image",
+          "site": "@siadentalclinic",
+          "creator": "@siadentalclinic",
+          "title": "Dental Exam | SIA Dental Clinic",
+          "description": "Our comprehensive dental exam includes a thorough assessment of your teeth, gums, and overall oral health."
+        },
+        "robots": "index, follow"
+      },
+      "orthodontics": {
+        "title": "Orthodontics | SIA Dental Clinic",
+        "description": "Achieve a straight, confident smile with our orthodontic treatments. We offer traditional braces for effective teeth alignment as well as Invisalign for a discreet, comfortable alternative. Our personalized orthodontic plans help correct misalignment, bite issues, and crowding while improving oral function. Whether you’re a child, teen, or adult, we provide solutions tailored to your needs for a healthier, more beautiful smile.",
+        "keywords": "orthodontics, braces, Invisalign, teeth alignment, misalignment, bite issues, teeth crowding, orthodontic treatment, confident smile, beautiful smile",
+        "openGraph": {
+          "title": "Orthodontics | SIA Dental Clinic",
+          "description": "Achieve a straight, confident smile with our orthodontic treatments, including traditional braces and Invisalign.",
+          "type": "website",
+
+          "url": "https://siadentalclinic.com/sr/services/orthodontics"
+        },
+        "twitter": {
+          "card": "summary_large_image",
+          "site": "@siadentalclinic",
+          "creator": "@siadentalclinic",
+          "title": "Orthodontics | SIA Dental Clinic",
+          "description": "Achieve a straight, confident smile with our orthodontic treatments, including traditional braces and Invisalign."
+        },
+        "robots": "index, follow"
+      },
+      "procedures": {
+        "title": "Procedures | SIA Dental Clinic",
+        "description": "We offer a full range of restorative and cosmetic dental procedures to enhance your smile and maintain oral health. From cavity fillings and root canals to dental implants and porcelain crowns, our expert team uses advanced techniques and high-quality materials to restore functionality and aesthetics. Whether you need minor repairs or full-mouth restoration, we ensure comfortable, long-lasting results tailored to your needs.",
+        "keywords": "dental procedures, fillings, implants, crowns, restorative dentistry, cosmetic dentistry, root canals, porcelain crowns, dental implants, oral health restoration, smile enhancement",
+        "openGraph": {
+          "title": "Procedures | SIA Dental Clinic",
+          "description": "We offer a full range of restorative and cosmetic dental procedures to enhance your smile and maintain oral health.",
+          "type": "website",
+
+          "url": "https://siadentalclinic.com/sr/services/procedures"
+        },
+        "twitter": {
+          "card": "summary_large_image",
+          "site": "@siadentalclinic",
+          "creator": "@siadentalclinic",
+          "title": "Procedures | SIA Dental Clinic",
+          "description": "We offer a full range of restorative and cosmetic dental procedures to enhance your smile and maintain oral health."
+        },
+        "robots": "index, follow"
+      },
+      "emergency": {
+        "title": "Emergency | SIA Dental Clinic",
+        "description": "Dental emergencies can happen at any time, and we’re here to provide immediate care when you need it most. Whether you're experiencing severe tooth pain, a broken or knocked-out tooth, swelling, or any other urgent dental issue, our team is ready to assist you. We prioritize emergency cases to offer quick relief, diagnose the problem, and provide effective treatment to restore your oral health as soon as possible.",
+        "keywords": "dental emergency, urgent dental care, tooth pain, broken tooth, knocked-out tooth, swelling, dental treatment, emergency dentist, oral health, emergency dental care",
+        "openGraph": {
+          "title": "Emergency | SIA Dental Clinic",
+          "description": "Dental emergencies can happen at any time, and we’re here to provide immediate care when you need it most.",
+          "type": "website",
+          "url": "https://siadentalclinic.com/sr/services/emergency"
+        },
+        "twitter": {
+          "card": "summary_large_image",
+          "site": "@siadentalclinic",
+          "creator": "@siadentalclinic",
+          "title": "Emergency | SIA Dental Clinic",
+          "description": "Dental emergencies can happen at any time, and we’re here to provide immediate care when you need it most."
+        },
+        "robots": "index, follow"
+      }
     }
-  }
+  k
 }

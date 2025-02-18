@@ -1,7 +1,7 @@
 import { EmployeePageInfo } from "./types";
 
 export const servicesKeys: string[] = [
-  "dentalExam",
+  "dental-exam",
   "orthodontics",
   "procedures",
   "emergency",

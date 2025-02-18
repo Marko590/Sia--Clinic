@@ -3,7 +3,42 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React, { use } from "react";
 import { servicesKeys } from "../../lib/data";
+import { getTranslations } from "next-intl/server";
+import { Metadata } from "next";
 
+type MetadataProps = {
+  params: { locale: string; "service-id": string };
+};
+export async function generateMetadata({
+  params,
+}: MetadataProps): Promise<Metadata> {
+  const { locale } = params;
+  const id = params["service-id"];
+  const t = await getTranslations({
+    locale,
+    namespace: "Metadata.servicesCards",
+  });
+
+  return {
+    title: t(`${id}.title`),
+    description: t(`${id}.description`),
+    keywords: t(`${id}.keywords`),
+    openGraph: {
+      title: t(`${id}.openGraph.title`),
+      description: t(`${id}.openGraph.description`),
+      type: "website",
+      url: t(`${id}.openGraph.url`),
+    },
+    twitter: {
+      card: "summary_large_image",
+      site: "@siadentalclinic",
+      creator: "@siadentalclinic",
+      title: t(`${id}.twitter.title`),
+      description: t(`${id}.twitter.description`),
+    },
+    robots: "index, follow",
+  };
+}
 export function generateStaticParams() {
   return servicesKeys.map((serviceKey) => ({ "service-id": serviceKey }));
 }

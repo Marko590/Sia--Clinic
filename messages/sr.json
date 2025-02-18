@@ -12,7 +12,7 @@
     "bookButton": "Rezerviši",
     "moreButton": "Više",
     "services": {
-      "dentalExam": {
+      "dental-exam": {
         "title": "Stomatološki pregled",
         "subTitle": "Čišćenje, rendgenski snimci, & oralni pregled.",
         "description": "Naš sveobuhvatni stomatološki pregled uključuje detaljnu procenu vaših zuba, desni i opšteg oralnog zdravlja. Pružamo profesionalno čišćenje za uklanjanje plaka i kamenca, radimo detaljne rendgenske snimke kako bismo otkrili bilo kakve skrivene probleme i obavljamo temeljni oralni pregled radi rane detekcije karijesa, bolesti desni i drugih stanja. Redovni pregledi pomažu u održavanju zdravog i blistavog osmeha i sprečavaju buduće stomatološke probleme.",
@@ -222,6 +222,84 @@
           "description": "Dr. Andrija Banović, visoko kvalifikovani stomatolog sa više od 10 godina iskustva u opštoj i estetskoj stomatologiji, nudi sveobuhvatnu stomatološku negu. Specijalizovan za preventivne tretmane, restorativne procedura i preobrazbe osmeha, Dr. Banović pruža optimalnu negu za sve pacijente.",
           "keywords": "Dr. Andrija Banović, stomatolog, opšta stomatologija, estetska stomatologija, stomatološka nega, preventivna nega, restorativna stomatologija, preobrazba osmeha, zubni implanti, plombiranje, endodoncija, stomatolog Beograd, stomatolog Voždovac, iskusni stomatolog, stručni stomatolog, profesionalna stomatološka nega"
         }
+      }
+    },
+    "servicesCards": {
+      "dental-exam": {
+        "title": "Stomatološki pregled | SIA Dental Clinic",
+        "description": "Naš sveobuhvatni stomatološki pregled uključuje detaljnu procenu vaših zuba, desni i opšteg oralnog zdravlja. Pružamo profesionalno čišćenje za uklanjanje plaka i kamenca, radimo detaljne rendgenske snimke kako bismo otkrili bilo kakve skrivene probleme i obavljamo temeljni oralni pregled radi rane detekcije karijesa, bolesti desni i drugih stanja. Redovni pregledi pomažu u održavanju zdravog i blistavog osmeha i sprečavaju buduće stomatološke probleme.",
+        "keywords": "stomatološki pregled, čišćenje, rendgenski snimci, oralni pregled, uklanjanje plaka, uklanjanje kamenca, zdravlje zuba, prevencija, stomatološki tretman, detekcija karijesa, bolesti desni, zdrav osmeh",
+        "openGraph": {
+          "title": "Stomatološki pregled | SIA Dental Clinic",
+          "description": "Naš sveobuhvatni stomatološki pregled uključuje detaljnu procenu vaših zuba, desni i opšteg oralnog zdravlja. Pružamo profesionalno čišćenje za uklanjanje plaka i kamenca, radimo detaljne rendgenske snimke kako bismo otkrili bilo kakve skrivene probleme i obavljamo temeljni oralni pregled radi rane detekcije karijesa, bolesti desni i drugih stanja.",
+          "type": "website",
+          "url": "https://siadentalclinic.com/sr/services/dental-exam"
+        },
+        "twitter": {
+          "card": "summary_large_image",
+          "site": "@siadentalclinic",
+          "creator": "@siadentalclinic",
+          "title": "Stomatološki pregled | SIA Dental Clinic",
+          "description": "Naš sveobuhvatni stomatološki pregled uključuje detaljnu procenu vaših zuba, desni i opšteg oralnog zdravlja. Pružamo profesionalno čišćenje za uklanjanje plaka i kamenca, radimo detaljne rendgenske snimke kako bismo otkrili bilo kakve skrivene probleme i obavljamo temeljni oralni pregled radi rane detekcije karijesa, bolesti desni i drugih stanja."
+        },
+        "robots": "index, follow"
+      },
+      "orthodontics": {
+        "title": "Ortodoncija | SIA Dental Clinic",
+        "description": "Postignite pravilan i samouveren osmeh uz naše ortodontske tretmane. Nudimo klasične fiksne proteze za efikasno ispravljanje zuba, kao i Invisalign kao diskretnu i udobnu alternativu. Naši personalizovani ortodontski planovi pomažu u ispravljanju nepravilnosti u zagrižaju, zbijenih ili razmaknutih zuba i drugih problema, poboljšavajući funkcionalnost i estetiku osmeha. Bez obzira na godine, imamo rešenja prilagođena vašim potrebama.",
+        "keywords": "ortodoncija, proteze, Invisalign, fiksne proteze, ispravljanje zuba, ortodontski tretmani, nepravilnosti u zagrižaju, zbijeni zubi, razmaknuti zubi, estetika osmeha, ortodontski planovi, samouveren osmeh, stomatološki tretmani",
+        "openGraph": {
+          "title": "Ortodoncija | SIA Dental Clinic",
+          "description": "Postignite pravilan i samouveren osmeh uz naše ortodontske tretmane. Nudimo klasične fiksne proteze za efikasno ispravljanje zuba, kao i Invisalign kao diskretnu i udobnu alternativu.",
+          "type": "website",
+          "url": "https://siadentalclinic.com/sr/services/orthodontics"
+        },
+        "twitter": {
+          "card": "summary_large_image",
+          "site": "@siadentalclinic",
+          "creator": "@siadentalclinic",
+          "title": "Ortodoncija | SIA Dental Clinic",
+          "description": "Postignite pravilan i samouveren osmeh uz naše ortodontske tretmane. Nudimo klasične fiksne proteze za efikasno ispravljanje zuba, kao i Invisalign kao diskretnu i udobnu alternativu."
+        },
+        "robots": "index, follow"
+      },
+      "procedures": {
+        "title": "Tretmani | SIA Dental Clinic",
+        "description": "Nudimo širok spektar restaurativnih i estetskih stomatoloških tretmana za poboljšanje vašeg osmeha i očuvanje oralnog zdravlja. Od jednostavnih plombi i lečenja kanala korena do ugradnje implantata i postavljanja porcelanskih krunica, naš stručni tim koristi napredne tehnike i visokokvalitetne materijale. Bilo da su vam potrebne manje popravke ili potpuna rekonstrukcija, pružamo sigurne, dugotrajne i prilagođene tretmane.",
+        "keywords": "stomatološki tretmani, plombe, implantati, krunice, restorativni tretmani, estetska stomatologija, lečenje kanala korena, ugradnja implantata, porcelanske krunice, stomatološka nega, poboljšanje osmeha, oralno zdravlje, dugotrajni tretmani",
+        "openGraph": {
+          "title": "Tretmani | SIA Dental Clinic",
+          "description": "Nudimo širok spektar restaurativnih i estetskih stomatoloških tretmana za poboljšanje vašeg osmeha i očuvanje oralnog zdravlja.",
+          "type": "website",
+          "url": "https://siadentalclinic.com/sr/services/procedures"
+        },
+        "twitter": {
+          "card": "summary_large_image",
+          "site": "@siadentalclinic",
+          "creator": "@siadentalclinic",
+          "title": "Tretmani | SIA Dental Clinic",
+          "description": "Nudimo širok spektar restaurativnih i estetskih stomatoloških tretmana za poboljšanje vašeg osmeha i očuvanje oralnog zdravlja."
+        },
+        "robots": "index, follow"
+      },
+      "emergency": {
+        "title": "Hitni slučajevi | SIA Dental Clinic",
+        "description": "Stomatološke hitne situacije se mogu desiti u bilo kom trenutku, a mi smo tu da vam pružimo brzu i efikasnu pomoć. Bez obzira na to da li imate jak zubobolju, slomljen ili izbijen zub, otok ili bilo koji drugi hitan stomatološki problem, naš tim će vas primiti što pre. Prioritet dajemo hitnim slučajevima kako bismo brzo ublažili bol, dijagnostikovali problem i obezbedili odgovarajući tretman za što brži oporavak.",
+        "keywords": "hitni slučajevi, zubobolja, slomljen zub, izbijen zub, otok, stomatološka pomoć, hitna stomatološka pomoć, hitni pregledi, zubna bol, stomatološki tretman, hitna pomoć stomatologija",
+        "openGraph": {
+          "title": "Hitni slučajevi | SIA Dental Clinic",
+          "description": "Stomatološke hitne situacije se mogu desiti u bilo kom trenutku, a mi smo tu da vam pružimo brzu i efikasnu pomoć.",
+          "type": "website",
+          "url": "https://siadentalclinic.com/sr/services/emergency"
+        },
+        "twitter": {
+          "card": "summary_large_image",
+          "site": "@siadentalclinic",
+          "creator": "@siadentalclinic",
+          "title": "Hitni slučajevi | SIA Dental Clinic",
+          "description": "Stomatološke hitne situacije se mogu desiti u bilo kom trenutku, a mi smo tu da vam pružimo brzu i efikasnu pomoć."
+        },
+        "robots": "index, follow"
       }
     }
   }
