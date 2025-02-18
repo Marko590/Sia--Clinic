@@ -209,6 +209,20 @@
       },
       "robots": "index, follow",
       "url": "https://www.siadentalclinic.com/sr/o-nama"
+    },
+    "DoctorInfoPage": {
+      "staff": {
+        "stefan-raicevic": {
+          "title": "Dr. Stefan Raičević - Stručni stomatolog za opštu i estetsku stomatologiju",
+          "description": "Dr. Stefan Raičević, sa više od 10 godina iskustva u opštoj i estetskoj stomatologiji, nudi visokokvalitetnu stomatološku negu u Beogradu. Specijalizovan za preventivne tretmane, restorativne tretmane i preobrazbe osmeha, obezbeđuje udoban i bezstresan tretman za pacijente svih uzrasta.",
+          "keywords": "Dr. Stefan Raičević, stomatolog, opšta stomatologija, estetska stomatologija, stomatološka nega, preventivna nega, restorativni tretmani, preobrazba osmeha, zubni implanti, plombiranje, endodoncija, stomatolog Beograd, stomatolog Voždovac, stručni stomatolog, iskusni stomatolog"
+        },
+        "andrija-banovic": {
+          "title": "Dr. Andrija Banović - Vešt stomatolog za sveobuhvatnu stomatološku negu",
+          "description": "Dr. Andrija Banović, visoko kvalifikovani stomatolog sa više od 10 godina iskustva u opštoj i estetskoj stomatologiji, nudi sveobuhvatnu stomatološku negu. Specijalizovan za preventivne tretmane, restorativne procedura i preobrazbe osmeha, Dr. Banović pruža optimalnu negu za sve pacijente.",
+          "keywords": "Dr. Andrija Banović, stomatolog, opšta stomatologija, estetska stomatologija, stomatološka nega, preventivna nega, restorativna stomatologija, preobrazba osmeha, zubni implanti, plombiranje, endodoncija, stomatolog Beograd, stomatolog Voždovac, iskusni stomatolog, stručni stomatolog, profesionalna stomatološka nega"
+        }
+      }
     }
   }
 }

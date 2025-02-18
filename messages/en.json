@@ -210,6 +210,20 @@
       },
       "robots": "index, follow",
       "url": "https://www.siadentalclinic.com/about"
+    },
+    "DoctorInfoPage": {
+      "staff": {
+        "stefan-raicevic": {
+          "title": "Dr. Stefan Raičević - Expert Dentist in General and Cosmetic Dentistry",
+          "description": "Dr. Stefan Raičević, with over 10 years of experience in general and cosmetic dentistry, offers high-quality dental care in Belgrade. Specializing in preventive, restorative treatments, and smile makeovers, he ensures a comfortable and stress-free experience for patients of all ages.",
+          "keywords": "Dr. Stefan Raičević, dentist, general dentistry, cosmetic dentistry, dental care, preventive care, restorative treatments, smile makeover, dental implants, dental fillings, root canal therapy, Belgrade dentist, Voždovac dentist, expert dentist, dental specialist, experienced dentist"
+        },
+        "andrija-banovic": {
+          "title": "Dr. Andrija Banović - Skilled Dentist for Comprehensive Dental Care",
+          "description": "Dr. Andrija Banović, a highly skilled dentist with over 10 years of experience in general and cosmetic dentistry, offers comprehensive dental care. Specializing in preventive treatments, restorative procedures, and smile transformations, Dr. Banović ensures optimal care for all patients.",
+          "keywords": "Dr. Andrija Banović, dentist, general dentistry, cosmetic dentistry, dental care, preventive care, restorative dentistry, smile makeover, dental implants, dental fillings, root canal therapy, Belgrade dentist, Voždovac dentist, experienced dentist, dental specialist, professional dental care"
+        }
+      }
     }
   }
 }
