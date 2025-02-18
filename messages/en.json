@@ -107,5 +107,109 @@
   },
   "PricingPage": {
     "priceTitle": "Price (RSD)"
+  },
+
+  "Metadata": {
+    "home": {
+      "title": "SIA Dental Clinic | Leading Dental Care in Belgrade, Voždovac",
+      "description": "Welcome to SIA Dental Clinic, a modern dental practice located in Voždovac, Belgrade. Our highly skilled professionals offer top-tier general and cosmetic dentistry. Book an appointment for personalized, compassionate care today.",
+      "keywords": "dentist in Belgrade, Voždovac dental clinic, dental care Belgrade, cosmetic dentistry, general dentistry, SIA Dental Clinic, expert dentist Belgrade, dental services Voždovac, modern dental clinic Serbia",
+      "openGraph": {
+        "title": "SIA Dental Clinic | Leading Dental Care in Belgrade, Voždovac",
+        "description": "SIA Dental Clinic in Voždovac, Belgrade offers professional dental care with experienced dentists specializing in general and cosmetic treatments. Book your consultation with our experts now!",
+        "url": "https://www.siadentalclinic.com",
+        "type": "website"
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "site": "@siadentalclinic",
+        "creator": "@siadentalclinic",
+        "title": "SIA Dental Clinic | Leading Dental Care in Belgrade, Voždovac",
+        "description": "Discover expert dental care at SIA Dental Clinic, Voždovac, Belgrade. Specializing in general and cosmetic dentistry with a patient-centered approach."
+      },
+      "robots": "index, follow",
+      "url": "https://www.siadentalclinic.com"
+    },
+    "services": {
+      "title": "Dental Services | Comprehensive Care in Belgrade, Voždovac",
+      "description": "Explore SIA Dental Clinic’s range of services, including dental exams, orthodontics, restorative procedures, and emergency care. Our expert team in Belgrade offers high-quality care with advanced treatments like Invisalign, dental implants, and more.",
+      "keywords": "dental services Belgrade, dental exam, orthodontics, braces, Invisalign, restorative dentistry, cosmetic dentistry, dental implants, emergency dentist Voždovac, tooth pain treatment, dental procedures Serbia",
+      "openGraph": {
+        "title": "Dental Services | Comprehensive Care at SIA Dental Clinic",
+        "description": "SIA Dental Clinic in Belgrade provides a full range of dental services. From regular check-ups to emergency dental care and advanced orthodontics, we offer personalized solutions to keep your smile healthy and beautiful.",
+        "url": "https://www.siadentalclinic.com/services",
+        "type": "website"
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "site": "@siadentalclinic",
+        "creator": "@siadentalclinic",
+        "title": "Dental Services | Comprehensive Care at SIA Dental Clinic",
+        "description": "Discover dental services at SIA Dental Clinic, Belgrade. From exams to braces and dental implants, our experts provide personalized care to meet your needs."
+      },
+      "robots": "index, follow",
+      "url": "https://www.siadentalclinic.com/services"
+    },
+
+    "ContactPage": {
+      "title": "Contact Us | SIA Dental Clinic",
+      "description": "Get in touch with SIA Dental Clinic in Belgrade, Voždovac. Schedule an appointment, check our working hours, or find our location on the map. Reach out for expert dental care and emergency services available 24/7.",
+      "keywords": "contact dentist, schedule appointment, dental clinic contact, dental care, dentist in Belgrade, Voždovac, Serbia, working hours, emergency dental care, phone number, email, location",
+      "openGraph": {
+        "title": "Contact Us | SIA Dental Clinic",
+        "description": "Contact SIA Dental Clinic in Belgrade, Voždovac. Schedule your dental appointment, view our working hours, or find us on the map. We provide emergency dental services and professional care.",
+        "url": "https://www.siadentalclinic.com/contact",
+        "type": "website",
+        "tags": [
+          "contact dentist",
+          "schedule appointment",
+          "dental care",
+          "dentist in Belgrade",
+          "working hours",
+          "emergency dental care",
+          "location",
+          "phone number",
+          "email"
+        ]
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "site": "@siadentalclinic",
+        "creator": "@siadentalclinic",
+        "title": "Contact Us | SIA Dental Clinic",
+        "description": "Reach out to SIA Dental Clinic for appointments, working hours, and emergency services."
+      },
+      "robots": "index, follow",
+      "url": "https://www.siadentalclinic.com/contact"
+    },
+    "About": {
+      "title": "About us | SIA Dental Clinic",
+      "description": "At SIA Dental Clinic, our experienced dental professionals provide high-quality care in Belgrade, Voždovac. Specializing in preventive care, restorative treatments, and smile makeovers, we offer a full range of services to maintain and improve your oral health.",
+      "keywords": "dentists in Belgrade, dental clinic, Dr. Stefan Raičević, Dr. Andrija Banović, dental professionals, preventive care, cosmetic dentistry, smile makeovers, dental team, SIA Dental Clinic",
+      "openGraph": {
+        "title": "Meet Our Team | SIA Dental Clinic",
+        "description": "Meet the skilled dental professionals at SIA Dental Clinic in Belgrade, Voždovac. Specializing in preventive care, smile makeovers, and restorative treatments.",
+        "url": "https://www.siadentalclinic.com/about",
+        "type": "website",
+        "tags": [
+          "dentists in Belgrade",
+          "SIA Dental Clinic staff",
+          "cosmetic dentistry",
+          "preventive care",
+          "smile makeovers",
+          "dental professionals",
+          "dental team"
+        ]
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "site": "@siadentalclinic",
+        "creator": "@siadentalclinic",
+        "title": "Meet Our Team | SIA Dental Clinic",
+        "description": "Meet the dental professionals at SIA Dental Clinic, providing expert care in Belgrade, Voždovac."
+      },
+      "robots": "index, follow",
+      "url": "https://www.siadentalclinic.com/about"
+    }
   }
 }
