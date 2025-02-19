@@ -4,7 +4,35 @@ import ContactInfo from "../components/ContactInfo";
 import { useTranslations } from "next-intl";
 import MapPaper from "../components/MapPaper";
 import SectionTitle from "../components/SectionTitle";
+import { getTranslations } from "next-intl/server";
+import { Metadata } from "next";
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Metadata" });
 
+  return {
+    title: t("ContactPage.title"),
+    description: t("ContactPage.description"),
+    keywords: t("ContactPage.keywords"),
+    openGraph: {
+      title: t("ContactPage.openGraph.title"),
+      description: t("ContactPage.openGraph.description"),
+      type: "website",
+      url: t("ContactPage.openGraph.url"),
+    },
+    twitter: {
+      card: "summary_large_image",
+      site: "@siadentalclinic",
+      creator: "@siadentalclinic",
+      title: t("ContactPage.twitter.title"),
+      description: t("ContactPage.twitter.description"),
+    },
+    robots: "index, follow",
+  };
+}
 const Contact = () => {
   const t = useTranslations("ContactPage");
   return (

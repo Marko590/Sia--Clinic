@@ -3,7 +3,36 @@ import React from "react";
 import EmployeeInfo from "../components/EmployeeInfo";
 import { useTranslations } from "next-intl";
 import SectionTitle from "../components/SectionTitle";
+import { getTranslations } from "next-intl/server";
+import { Metadata } from "next";
 
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Metadata" });
+
+  return {
+    title: t("About.title"),
+    description: t("About.description"),
+    keywords: t("About.keywords"),
+    openGraph: {
+      title: t("About.openGraph.title"),
+      description: t("About.openGraph.description"),
+      type: "website",
+      url: t("About.openGraph.url"),
+    },
+    twitter: {
+      card: "summary_large_image",
+      site: "@siadentalclinic",
+      creator: "@siadentalclinic",
+      title: t("About.twitter.title"),
+      description: t("About.twitter.description"),
+    },
+    robots: "index, follow",
+  };
+}
 const Page = () => {
   const t = useTranslations("About");
   const staffIds = ["stefan-raicevic", "andrija-banovic"];

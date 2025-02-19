@@ -11,7 +11,7 @@
     "bookButton": "Book",
     "moreButton": "More",
     "services": {
-      "dentalExam": {
+      "dental-exam": {
         "title": "Dental Exam",
         "subTitle": "Cleaning, x-rays, & oral exam.",
         "description": "Our comprehensive dental exam includes a thorough assessment of your teeth, gums, and overall oral health. We provide professional cleaning to remove plaque and tartar, take detailed x-rays to detect any underlying issues, and conduct an in-depth oral examination to ensure early detection of cavities, gum disease, and other concerns. Regular exams help maintain a healthy, bright smile and prevent future dental problems.",
@@ -107,5 +107,230 @@
   },
   "PricingPage": {
     "priceTitle": "Price (RSD)"
+  },
+
+  "Metadata": {
+    "home": {
+      "title": "SIA Dental Clinic | Leading Dental Care in Belgrade, Voždovac",
+      "description": "Welcome to SIA Dental Clinic, a modern dental practice located in Voždovac, Belgrade. Our highly skilled professionals offer top-tier general and cosmetic dentistry. Book an appointment for personalized, compassionate care today.",
+      "keywords": "dentist in Belgrade, Voždovac dental clinic, dental care Belgrade, cosmetic dentistry, general dentistry, SIA Dental Clinic, expert dentist Belgrade, dental services Voždovac, modern dental clinic Serbia",
+      "openGraph": {
+        "title": "SIA Dental Clinic | Leading Dental Care in Belgrade, Voždovac",
+        "description": "SIA Dental Clinic in Voždovac, Belgrade offers professional dental care with experienced dentists specializing in general and cosmetic treatments. Book your consultation with our experts now!",
+        "url": "https://www.siadentalclinic.com",
+        "type": "website"
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "site": "@siadentalclinic",
+        "creator": "@siadentalclinic",
+        "title": "SIA Dental Clinic | Leading Dental Care in Belgrade, Voždovac",
+        "description": "Discover expert dental care at SIA Dental Clinic, Voždovac, Belgrade. Specializing in general and cosmetic dentistry with a patient-centered approach."
+      },
+      "robots": "index, follow",
+      "url": "https://www.siadentalclinic.com"
+    },
+    "services": {
+      "title": "Dental Services | Comprehensive Care in Belgrade, Voždovac",
+      "description": "Explore SIA Dental Clinic’s range of services, including dental exams, orthodontics, restorative procedures, and emergency care. Our expert team in Belgrade offers high-quality care with advanced treatments like Invisalign, dental implants, and more.",
+      "keywords": "dental services Belgrade, dental exam, orthodontics, braces, Invisalign, restorative dentistry, cosmetic dentistry, dental implants, emergency dentist Voždovac, tooth pain treatment, dental procedures Serbia",
+      "openGraph": {
+        "title": "Dental Services | Comprehensive Care at SIA Dental Clinic",
+        "description": "SIA Dental Clinic in Belgrade provides a full range of dental services. From regular check-ups to emergency dental care and advanced orthodontics, we offer personalized solutions to keep your smile healthy and beautiful.",
+        "url": "https://www.siadentalclinic.com/services",
+        "type": "website"
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "site": "@siadentalclinic",
+        "creator": "@siadentalclinic",
+        "title": "Dental Services | Comprehensive Care at SIA Dental Clinic",
+        "description": "Discover dental services at SIA Dental Clinic, Belgrade. From exams to braces and dental implants, our experts provide personalized care to meet your needs."
+      },
+      "robots": "index, follow",
+      "url": "https://www.siadentalclinic.com/services"
+    },
+
+    "ContactPage": {
+      "title": "Contact Us | SIA Dental Clinic",
+      "description": "Get in touch with SIA Dental Clinic in Belgrade, Voždovac. Schedule an appointment, check our working hours, or find our location on the map. Reach out for expert dental care and emergency services available 24/7.",
+      "keywords": "contact dentist, schedule appointment, dental clinic contact, dental care, dentist in Belgrade, Voždovac, Serbia, working hours, emergency dental care, phone number, email, location",
+      "openGraph": {
+        "title": "Contact Us | SIA Dental Clinic",
+        "description": "Contact SIA Dental Clinic in Belgrade, Voždovac. Schedule your dental appointment, view our working hours, or find us on the map. We provide emergency dental services and professional care.",
+        "url": "https://www.siadentalclinic.com/contact",
+        "type": "website",
+        "tags": [
+          "contact dentist",
+          "schedule appointment",
+          "dental care",
+          "dentist in Belgrade",
+          "working hours",
+          "emergency dental care",
+          "location",
+          "phone number",
+          "email"
+        ]
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "site": "@siadentalclinic",
+        "creator": "@siadentalclinic",
+        "title": "Contact Us | SIA Dental Clinic",
+        "description": "Reach out to SIA Dental Clinic for appointments, working hours, and emergency services."
+      },
+      "robots": "index, follow",
+      "url": "https://www.siadentalclinic.com/contact"
+    },
+    "About": {
+      "title": "About us | SIA Dental Clinic",
+      "description": "At SIA Dental Clinic, our experienced dental professionals provide high-quality care in Belgrade, Voždovac. Specializing in preventive care, restorative treatments, and smile makeovers, we offer a full range of services to maintain and improve your oral health.",
+      "keywords": "dentists in Belgrade, dental clinic, Dr. Stefan Raičević, Dr. Andrija Banović, dental professionals, preventive care, cosmetic dentistry, smile makeovers, dental team, SIA Dental Clinic",
+      "openGraph": {
+        "title": "Meet Our Team | SIA Dental Clinic",
+        "description": "Meet the skilled dental professionals at SIA Dental Clinic in Belgrade, Voždovac. Specializing in preventive care, smile makeovers, and restorative treatments.",
+        "url": "https://www.siadentalclinic.com/about",
+        "type": "website",
+        "tags": [
+          "dentists in Belgrade",
+          "SIA Dental Clinic staff",
+          "cosmetic dentistry",
+          "preventive care",
+          "smile makeovers",
+          "dental professionals",
+          "dental team"
+        ]
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "site": "@siadentalclinic",
+        "creator": "@siadentalclinic",
+        "title": "Meet Our Team | SIA Dental Clinic",
+        "description": "Meet the dental professionals at SIA Dental Clinic, providing expert care in Belgrade, Voždovac."
+      },
+      "robots": "index, follow",
+      "url": "https://www.siadentalclinic.com/about"
+    },
+    "DoctorInfoPage": {
+      "staff": {
+        "stefan-raicevic": {
+          "title": "Dr. Stefan Raičević - Expert Dentist in General and Cosmetic Dentistry",
+          "description": "Dr. Stefan Raičević, with over 10 years of experience in general and cosmetic dentistry, offers high-quality dental care in Belgrade. Specializing in preventive, restorative treatments, and smile makeovers, he ensures a comfortable and stress-free experience for patients of all ages.",
+          "keywords": "Dr. Stefan Raičević, dentist, general dentistry, cosmetic dentistry, dental care, preventive care, restorative treatments, smile makeover, dental implants, dental fillings, root canal therapy, Belgrade dentist, Voždovac dentist, expert dentist, dental specialist, experienced dentist"
+        },
+        "andrija-banovic": {
+          "title": "Dr. Andrija Banović - Skilled Dentist for Comprehensive Dental Care",
+          "description": "Dr. Andrija Banović, a highly skilled dentist with over 10 years of experience in general and cosmetic dentistry, offers comprehensive dental care. Specializing in preventive treatments, restorative procedures, and smile transformations, Dr. Banović ensures optimal care for all patients.",
+          "keywords": "Dr. Andrija Banović, dentist, general dentistry, cosmetic dentistry, dental care, preventive care, restorative dentistry, smile makeover, dental implants, dental fillings, root canal therapy, Belgrade dentist, Voždovac dentist, experienced dentist, dental specialist, professional dental care"
+        }
+      }
+    },
+    "servicesCards": {
+      "dental-exam": {
+        "title": "Dental Exam | SIA Dental Clinic",
+        "description": "Our comprehensive dental exam includes a thorough assessment of your teeth, gums, and overall oral health. We provide professional cleaning to remove plaque and tartar, take detailed x-rays to detect any underlying issues, and conduct an in-depth oral examination to ensure early detection of cavities, gum disease, and other concerns. Regular exams help maintain a healthy, bright smile and prevent future dental problems.",
+        "keywords": "dental exam, cleaning, x-rays, oral exam, plaque removal, tartar removal, cavity detection, gum disease, oral health, teeth checkup, dental hygiene",
+        "openGraph": {
+          "title": "Dental Exam | SIA Dental Clinic",
+          "description": "Our comprehensive dental exam includes a thorough assessment of your teeth, gums, and overall oral health.",
+          "type": "website",
+          "url": "https://siadentalclinic.com/sr/services/dental-exam"
+        },
+        "twitter": {
+          "card": "summary_large_image",
+          "site": "@siadentalclinic",
+          "creator": "@siadentalclinic",
+          "title": "Dental Exam | SIA Dental Clinic",
+          "description": "Our comprehensive dental exam includes a thorough assessment of your teeth, gums, and overall oral health."
+        },
+        "robots": "index, follow"
+      },
+      "orthodontics": {
+        "title": "Orthodontics | SIA Dental Clinic",
+        "description": "Achieve a straight, confident smile with our orthodontic treatments. We offer traditional braces for effective teeth alignment as well as Invisalign for a discreet, comfortable alternative. Our personalized orthodontic plans help correct misalignment, bite issues, and crowding while improving oral function. Whether you’re a child, teen, or adult, we provide solutions tailored to your needs for a healthier, more beautiful smile.",
+        "keywords": "orthodontics, braces, Invisalign, teeth alignment, misalignment, bite issues, teeth crowding, orthodontic treatment, confident smile, beautiful smile",
+        "openGraph": {
+          "title": "Orthodontics | SIA Dental Clinic",
+          "description": "Achieve a straight, confident smile with our orthodontic treatments, including traditional braces and Invisalign.",
+          "type": "website",
+
+          "url": "https://siadentalclinic.com/sr/services/orthodontics"
+        },
+        "twitter": {
+          "card": "summary_large_image",
+          "site": "@siadentalclinic",
+          "creator": "@siadentalclinic",
+          "title": "Orthodontics | SIA Dental Clinic",
+          "description": "Achieve a straight, confident smile with our orthodontic treatments, including traditional braces and Invisalign."
+        },
+        "robots": "index, follow"
+      },
+      "procedures": {
+        "title": "Procedures | SIA Dental Clinic",
+        "description": "We offer a full range of restorative and cosmetic dental procedures to enhance your smile and maintain oral health. From cavity fillings and root canals to dental implants and porcelain crowns, our expert team uses advanced techniques and high-quality materials to restore functionality and aesthetics. Whether you need minor repairs or full-mouth restoration, we ensure comfortable, long-lasting results tailored to your needs.",
+        "keywords": "dental procedures, fillings, implants, crowns, restorative dentistry, cosmetic dentistry, root canals, porcelain crowns, dental implants, oral health restoration, smile enhancement",
+        "openGraph": {
+          "title": "Procedures | SIA Dental Clinic",
+          "description": "We offer a full range of restorative and cosmetic dental procedures to enhance your smile and maintain oral health.",
+          "type": "website",
+
+          "url": "https://siadentalclinic.com/sr/services/procedures"
+        },
+        "twitter": {
+          "card": "summary_large_image",
+          "site": "@siadentalclinic",
+          "creator": "@siadentalclinic",
+          "title": "Procedures | SIA Dental Clinic",
+          "description": "We offer a full range of restorative and cosmetic dental procedures to enhance your smile and maintain oral health."
+        },
+        "robots": "index, follow"
+      },
+      "emergency": {
+        "title": "Emergency | SIA Dental Clinic",
+        "description": "Dental emergencies can happen at any time, and we’re here to provide immediate care when you need it most. Whether you're experiencing severe tooth pain, a broken or knocked-out tooth, swelling, or any other urgent dental issue, our team is ready to assist you. We prioritize emergency cases to offer quick relief, diagnose the problem, and provide effective treatment to restore your oral health as soon as possible.",
+        "keywords": "dental emergency, urgent dental care, tooth pain, broken tooth, knocked-out tooth, swelling, dental treatment, emergency dentist, oral health, emergency dental care",
+        "openGraph": {
+          "title": "Emergency | SIA Dental Clinic",
+          "description": "Dental emergencies can happen at any time, and we’re here to provide immediate care when you need it most.",
+          "type": "website",
+          "url": "https://siadentalclinic.com/sr/services/emergency"
+        },
+        "twitter": {
+          "card": "summary_large_image",
+          "site": "@siadentalclinic",
+          "creator": "@siadentalclinic",
+          "title": "Emergency | SIA Dental Clinic",
+          "description": "Dental emergencies can happen at any time, and we’re here to provide immediate care when you need it most."
+        },
+        "robots": "index, follow"
+      }
+    },
+    "PricingPage": {
+      "title": "Price List | SIA Dental Clinic",
+      "description": "Check out the price list of dental services at SIA Dental Clinic in Belgrade. We offer orthodontics, cosmetic, restorative procedures, and more at affordable prices.",
+      "keywords": [
+        "dental services price list",
+        "dentist prices Belgrade",
+        "orthodontics cost",
+        "teeth whitening price",
+        "dental implants cost",
+        "ceramic crowns price",
+        "pediatric dentistry Belgrade",
+        "emergency dental care"
+      ],
+      "canonical": "https://siadental.rs/en/pricing",
+      "og": {
+        "title": "Dental Services Price List | SIA Dental Clinic",
+        "description": "Find out the cost of our dental services, including orthodontics, cosmetic, and restorative dentistry. Visit SIA Dental Clinic in Belgrade.",
+        "url": "https://siadentalclinic.com/en/pricing",
+        "type": "website"
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Dental Services Price List | SIA Dental Clinic",
+        "description": "Find out the cost of our dental services, including orthodontics, cosmetic, and restorative dentistry. Visit SIA Dental Clinic in Belgrade.",
+        "site": "@siadental"
+      }
+    }
   }
 }

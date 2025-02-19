@@ -3,7 +3,42 @@ import { Box, Typography } from "@mui/material";
 import React, { use } from "react";
 import { useTranslations } from "next-intl";
 import { employeeInfo } from "../../lib/data";
+import { getTranslations } from "next-intl/server";
+import { Metadata } from "next";
 
+type MetadataProps = {
+  params: Promise<{ locale: string; id: string }>;
+};
+export async function generateMetadata({
+  params,
+}: MetadataProps): Promise<Metadata> {
+  const param = await params;
+  const { locale } = param;
+  const id = param["id"];
+  const t = await getTranslations({
+    locale,
+    namespace: "Metadata.DoctorInfoPage.staff",
+  });
+
+  return {
+    title: t(`${id}.title`),
+    description: t(`${id}.description`),
+    keywords: t(`${id}.keywords`),
+    openGraph: {
+      title: t(`${id}.title`),
+      description: t(`${id}.description`),
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      site: "@siadentalclinic",
+      creator: "@siadentalclinic",
+      title: t(`${id}.title`),
+      description: t(`${id}.description`),
+    },
+    robots: "index, follow",
+  };
+}
 export function generateStaticParams() {
   return employeeInfo.map((employee) => ({ id: employee.id }));
 }
