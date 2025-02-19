@@ -301,6 +301,28 @@
         },
         "robots": "index, follow"
       }
+    },
+    "PricingPage": {
+      "title": "Cenovnik | SIA Dental Clinic",
+      "description": "Pogledajte cenovnik stomatoloških usluga u SIA Dental Clinic u Beogradu. Nudimo ortodonciju, estetsku stomatologiju, restaurativne zahvate i više po pristupačnim cenama.",
+      "keywords": [
+        "cenovnik stomatoloških usluga",
+        "cena zubarskih usluga Beograd",
+        "ortodoncija cena",
+        "beljenje zuba cena",
+        "stomatološki implantati cena",
+        "keramičke krunice cena",
+        "dečija stomatologija Beograd",
+        "hitna stomatološka pomoć"
+      ],
+      "canonical": "https://siadental.rs/cenovnik",
+      "og": {
+        "title": "Cenovnik stomatoloških usluga | SIA Dental Clinic",
+        "description": "Saznajte cene naših stomatoloških usluga, uključujući ortodonciju, estetsku i restaurativnu stomatologiju. Posetite SIA Dental Clinic u Beogradu.",
+        "url": "https://siadental.rs/cenovnik",
+        "type": "website",
+        "image": "https://siadental.rs/images/cenovnik-og.jpg"
+      }
     }
   }
 }

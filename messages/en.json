@@ -304,6 +304,33 @@
         },
         "robots": "index, follow"
       }
+    },
+    "PricingPage": {
+      "title": "Price List | SIA Dental Clinic",
+      "description": "Check out the price list of dental services at SIA Dental Clinic in Belgrade. We offer orthodontics, cosmetic, restorative procedures, and more at affordable prices.",
+      "keywords": [
+        "dental services price list",
+        "dentist prices Belgrade",
+        "orthodontics cost",
+        "teeth whitening price",
+        "dental implants cost",
+        "ceramic crowns price",
+        "pediatric dentistry Belgrade",
+        "emergency dental care"
+      ],
+      "canonical": "https://siadental.rs/en/pricing",
+      "og": {
+        "title": "Dental Services Price List | SIA Dental Clinic",
+        "description": "Find out the cost of our dental services, including orthodontics, cosmetic, and restorative dentistry. Visit SIA Dental Clinic in Belgrade.",
+        "url": "https://siadentalclinic.com/en/pricing",
+        "type": "website"
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Dental Services Price List | SIA Dental Clinic",
+        "description": "Find out the cost of our dental services, including orthodontics, cosmetic, and restorative dentistry. Visit SIA Dental Clinic in Belgrade.",
+        "site": "@siadental"
+      }
     }
-  k
+  }
 }
