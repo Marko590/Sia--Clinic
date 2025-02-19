@@ -6,12 +6,12 @@ type Props = {
   children: ReactNode;
 };
 type MetadataProps = {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
 export async function generateMetadata({
   params,
 }: MetadataProps): Promise<Metadata> {
-  const { locale } = params;
+  const { locale } = await params;
   const t = await getTranslations({
     locale,
     namespace: "Metadata.PricingPage",

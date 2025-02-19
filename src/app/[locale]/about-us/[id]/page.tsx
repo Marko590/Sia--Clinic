@@ -7,12 +7,14 @@ import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
 
 type MetadataProps = {
-  params: { locale: string; id: string };
+  params: Promise<{ locale: string; id: string }>;
 };
 export async function generateMetadata({
   params,
 }: MetadataProps): Promise<Metadata> {
-  const { locale, id } = params;
+  const param = await params;
+  const { locale } = param;
+  const id = param["id"];
   const t = await getTranslations({
     locale,
     namespace: "Metadata.DoctorInfoPage.staff",

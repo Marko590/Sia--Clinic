@@ -29,11 +29,11 @@ const inter = Inter({
 
 type Props = {
   children: ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = params;
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
   return {
@@ -59,7 +59,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 type Locales = "en" | "sr";
 export default async function RootLayout({ children, params }: Props) {
-  const { locale } = params;
+  const { locale } = await params;
   if (!routing.locales.includes(locale as Locales)) {
     notFound();
   }
