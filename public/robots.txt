@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://sia-clinic.vercel.app
+
+# Sitemaps
+Sitemap: https://sia-clinic.vercel.app/sitemap.xml

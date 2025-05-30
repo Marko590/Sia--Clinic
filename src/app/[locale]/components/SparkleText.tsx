@@ -19,8 +19,7 @@ const SparkleText = ({
       star.style.setProperty("--star-left", `${rand(-10, 120)}%`);
       star.style.setProperty("--star-top", `${rand(-10, 50)}%`);
       star.style.animation = "none";
-      const height = (star as HTMLElement).offsetHeight;
-      console.log(height);
+      void (star as HTMLElement).offsetHeight;
       star.style.animation = "";
     };
     for (const star of Array.from(stars)) {
